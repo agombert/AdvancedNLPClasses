@@ -4,18 +4,21 @@ on:
   push:
     branches: [ "main" ]
 
+# Autorise le déploiement sur Pages avec le token GitHub
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# Empêche deux déploiements simultanés
 concurrency:
   group: "pages"
   cancel-in-progress: true
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # On revient à la version stable pour éviter le problème
+    # On force ici Ubuntu 22.04 plutôt que 'ubuntu-latest' ou 'ubuntu-24.04'
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -23,7 +26,7 @@ jobs:
       - name: Install Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Install Poetry
         run: pip install poetry
@@ -36,11 +39,12 @@ jobs:
 
       - name: Compile PDFs
         run: poetry run make-pdfs
-        # Utilise le script Python défini dans pyproject.toml
+        # Appelle le script Python défini dans pyproject.toml (section [tool.poetry.scripts])
 
       - name: Build MkDocs
         run: poetry run mkdocs build --clean
 
+      # Étape optionnelle pour enregistrer les PDF en tant qu'artefacts
       - name: Upload PDFs as artifacts
         uses: actions/upload-artifact@v3
         with:
@@ -54,10 +58,11 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: site  # Répertoire généré par "mkdocs build"
+          path: site  # le répertoire généré par "mkdocs build"
 
   deploy:
-    runs-on: ubuntu-latest  # Même pour le job "deploy"
+    # On force aussi Ubuntu 22.04 pour le job de déploiement
+    runs-on: ubuntu-22.04
     needs: build
     environment:
       name: github-pages
