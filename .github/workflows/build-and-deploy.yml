@@ -39,12 +39,10 @@ jobs:
 
       - name: Compile PDFs
         run: poetry run make-pdfs
-        # Appelle le script Python défini dans pyproject.toml (section [tool.poetry.scripts])
 
       - name: Build MkDocs
         run: poetry run mkdocs build --clean
 
-      # Au lieu d'utiliser actions/upload-artifact, nous allons simplement afficher les PDFs générés
       - name: List generated PDFs
         run: ls -la docs/pdfs/
 
