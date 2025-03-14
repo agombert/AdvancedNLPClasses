@@ -46,7 +46,7 @@ jobs:
 
       # Étape optionnelle pour enregistrer les PDF en tant qu'artefacts
       - name: Upload PDFs as artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3.1.2
         with:
           name: pdfs
           path: docs/pdfs/
