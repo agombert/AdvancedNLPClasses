@@ -16,7 +16,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  build-and-deploy:
     # On force ici Ubuntu 22.04 plutôt que 'ubuntu-latest' ou 'ubuntu-24.04'
     runs-on: ubuntu-22.04
     steps:
@@ -49,19 +49,9 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: site  # le répertoire généré par "mkdocs build"
-
-  deploy:
-    # On force aussi Ubuntu 22.04 pour le job de déploiement
-    runs-on: ubuntu-22.04
-    needs: build
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
+      # Utiliser une approche alternative pour déployer sur GitHub Pages
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: site  # Le répertoire généré par "mkdocs build"
+          branch: gh-pages  # La branche où déployer
