@@ -34,28 +34,15 @@ jobs:
       - name: Install dependencies
         run: poetry install
 
-      - name: Install LaTeX
-        run: sudo apt-get update && sudo apt-get install -y texlive-latex-extra latexmk
-
-      - name: Compile PDFs
-        run: poetry run make-pdfs
-
-      - name: Debug - Check LaTeX files
+      - name: Check PDFs directory
         run: |
-          echo "=== Listing LaTeX directories ==="
-          ls -la latex/
-          echo "=== Checking chapter1 content ==="
-          ls -la latex/chapter1/
-          echo "=== Checking if PDFs were generated ==="
-          find latex -name "*.pdf"
           echo "=== Checking docs/pdfs directory ==="
           ls -la docs/pdfs/ || echo "docs/pdfs directory does not exist"
+          echo "=== Checking PDF file ==="
+          ls -la docs/pdfs/2025_BSE_NLP_Session_1.pdf || echo "PDF file not found"
 
       - name: Build MkDocs
         run: poetry run mkdocs build --clean
-
-      - name: List generated PDFs
-        run: ls -la docs/pdfs/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
