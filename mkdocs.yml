@@ -14,6 +14,11 @@ nav:
     - "Session 10: Agents": chapter10/README.md
   - Notebooks: notebooks.md
   - Resources: resources.md
+  - Evaluations:
+    - Overview: evaluations/evaluations.md
+    - "First Home Assignment": evaluations/first-home-assignment.md
+    - "Second Home Assignment": evaluations/second-home-assignment.md
+    - "Final Project": evaluations/final-project.md
 
 theme:
   name: material
