@@ -40,6 +40,17 @@ jobs:
       - name: Compile PDFs
         run: poetry run make-pdfs
 
+      - name: Debug - Check LaTeX files
+        run: |
+          echo "=== Listing LaTeX directories ==="
+          ls -la latex/
+          echo "=== Checking chapter1 content ==="
+          ls -la latex/chapter1/
+          echo "=== Checking if PDFs were generated ==="
+          find latex -name "*.pdf"
+          echo "=== Checking docs/pdfs directory ==="
+          ls -la docs/pdfs/ || echo "docs/pdfs directory does not exist"
+
       - name: Build MkDocs
         run: poetry run mkdocs build --clean
 
