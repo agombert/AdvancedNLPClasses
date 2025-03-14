@@ -8,6 +8,10 @@ Arnault Gombert
 
 Python programming, econometrics and machine learning.
 
+## Course Materials
+
+[Download Session 1 Slides (PDF)](../pdfs/2025_BSE_NLP_Session_1.pdf)
+
 ## Introduction to Text Mining and Natural Language Processing
 
 ### Overview and objectives
