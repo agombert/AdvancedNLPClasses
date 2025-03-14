@@ -44,13 +44,9 @@ jobs:
       - name: Build MkDocs
         run: poetry run mkdocs build --clean
 
-      # Étape optionnelle pour enregistrer les PDF en tant qu'artefacts
-      - name: Upload PDFs as artifacts
-        uses: actions/upload-artifact@v3.1.2
-        with:
-          name: pdfs
-          path: docs/pdfs/
-          retention-days: 1
+      # Au lieu d'utiliser actions/upload-artifact, nous allons simplement afficher les PDFs générés
+      - name: List generated PDFs
+        run: ls -la docs/pdfs/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
