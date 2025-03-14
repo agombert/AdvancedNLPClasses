@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "bse-nlp"
+version = "0.1.0"
+description = "Project for NLP classes"
+authors = ["agombert <arnault.gombert@pm.me>"]
+readme = "README.md"
+packages = [{include = "bse_nlp"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mkdocs = "^1.6.1"
+mkdocs-material = "^9.6.8"
+mkdocs-jupyter = "^0.25.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.11.0"
+black = "^25.1.0"
+pre-commit = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+make-pdfs = "bse_nlp.make_pdfs:main"
