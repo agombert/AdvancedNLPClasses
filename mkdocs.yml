@@ -1,0 +1,23 @@
+site_name: "Advanced NLP Classes"
+nav:
+  - Home: index.md
+  - Courses:
+    - "Introduction to the class": chapter1/README.md
+    - "Deep Learning for NLP": chapter2/README.md
+    - "Word Embeddings": chapter3/README.md
+    - "Practical NLP - 1": chapter4/README.md
+    - "Transformers & BERT": chapter5/README.md
+    - "Few-Shot learning & Transfer Learning": chapter6/README.md
+    - "Injustice & Biases in NLP": chapter7/README.md
+    - "Practical NLP - 2": chapter8/README.md
+    - "LLM introduction": chapter9/README.md
+    - "Agents": chapter10/README.md
+  - Notebooks: notebooks.md
+  - Resources: resources.md
+
+theme:
+  name: material
+
+plugins:
+  - mkdocs-jupyter
+  - search
