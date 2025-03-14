@@ -1,6 +1,31 @@
-# Welcome to Advanced NLP Classes
+# Advanced NLP Classes
 
-Welcome to the Advanced Natural Language Processing course taught by Professor Arnault Gombert. This website contains all the learning materials, notebooks, and resources for the course.
+Welcome to my Advanced NLP Classes website. Here, you'll find all the information you need to follow the course, including lecture notes, slides, resources, and home assignments. I designed this course to guide you through both traditional NLP methods and modern deep learning approaches, ensuring you gain a well-rounded understanding of how to process and analyze natural language data.
+
+Below, I've provided a short overview of each main section of the course. Even if you're new to NLP or machine learning, don't worry—this course begins with foundational concepts and gradually works toward more advanced topics.
+
+---
+
+## Professor
+
+**Arnault Gombert**
+
+I’m your instructor for this course, and I’ll be here to guide you through each topic step by step. Feel free to reach out if you have any questions or need additional support. My goal is to help you not only understand the theory but also gain hands-on practice in building NLP solutions.
+
+---
+
+## Course Materials
+
+You can access all the key materials here on this site. In particular, you’ll find:
+
+- **Slides** for each lecture session, which you can use as a reference or to review later.
+- **Notebooks** that contain hands-on exercises and examples.
+- **Resources** linking to external articles, videos, or blogs that can expand your learning.
+- **Home Assignments** and instructions for the **Final Project**.
+
+[Download Session 1 Slides (PDF)](../pdfs/2025_BSE_NLP_Session_1.pdf)
+
+I’ll keep this repository updated with the latest materials, so please check back regularly.
 
 ## About This Course
 
