@@ -7,9 +7,15 @@
 
 ### Notebooks:
 
-- [Baseline with regexes](../notebooks/2025_BSE_NLP_Session_1.zip)
-- [TF-IDF: how to judge its quality?](../notebooks/2025_BSE_NLP_Session_1.zip)
-- [BM25: a better TF-IDF, judge through different metrics](../notebooks/2025_BSE_NLP_Session_1.zip)
+- [Python 1o1]:
+    - [Python types](../notebooks/Session_1_1_Python_1o1_1.ipynb)
+    - [Python classes](../notebooks/Session_1_1_Python_1o1_2.ipynb)
+    - [Python dataframes](../notebooks/Session_1_1_Python_1o1_3.ipynb)
+    - [Python numpy](../notebooks/Session_1_1_Python_1o1_4.ipynb)
+    - [Python scikit-learn](../notebooks/Session_1_1_Python_1o1_5.ipynb)
+- [Baseline with regexes and spaCy](../notebooks/Session_1_2_Baseline.ipynb)
+- [TF-IDF: how to judge its quality?](../notebooks/Session_1_3_TFIDF.ipynb)
+- [BM25: a better TF-IDF, judge through different metrics](../notebooks/Session_1_4_BM25.ipynb)
 
 ---
 
@@ -40,35 +46,31 @@ I’ll walk you through the **TF-IDF (Term Frequency–Inverse Document Frequenc
 ### Recommended Reading
 
 - **Van Rijsbergen, C. J. (1979). _Information Retrieval (2nd ed.)_**
-  [http://www.dcs.gla.ac.uk/Keith/Preface.html](http://www.dcs.gla.ac.uk/Keith/Preface.html)
+  [Book](http://www.dcs.gla.ac.uk/Keith/Preface.html)
   A foundational text on the principles of information retrieval systems.
 
 - **Gupta et al. (2014). "Improved pattern learning for bootstrapped entity extraction."**
-  Related paper: [Angeli et al. (2014) ACL](https://aclanthology.org/P14-1144)
+  [Paper](https://aclanthology.org/W14-1611/)
   Discusses pattern-based bootstrapping approaches to entity extraction.
 
 - **Wang et al. (2019). "GLUE: A Multi-Task Benchmark And Analysis Platform For Natural Language Understanding."**
-  [OpenReview (ICLR 2019)](https://openreview.net/forum?id=rJ4km2R5t7) | [GLUE Benchmark](https://gluebenchmark.com)
+  [Paper](https://aclanthology.org/W18-5446/) | [GLUE Benchmark](https://gluebenchmark.com)
   Proposes a widely adopted multi-task benchmark for evaluating NLP models.
 
 - **Strubell et al. (2019). "Energy and Policy Considerations for Deep Learning in NLP."**
-  [arXiv:1906.02243](https://arxiv.org/abs/1906.02243)
+  [Paper](https://aclanthology.org/P19-1355/)
   Investigates the environmental impact of large-scale NLP model training.
 
 - **Dodge et al. (2022). "Software Carbon Intensity (SCI)."**
-  [Green Software Foundation](https://greensoftware.foundation/projects/software-carbon-intensity-spec)
+  [Paper](https://arxiv.org/abs/2206.05229)
   A framework for measuring the carbon intensity of software solutions.
 
 - **Sheng et al. (2019). "The Woman Worked as a Babysitter: On Biases in Language Generation."**
-  [arXiv:1904.02264](https://arxiv.org/abs/1904.02264)
+  [Paper](https://aclanthology.org/D19-1339/)
   Examines bias in language models via prompts and generated outputs.
 
-- **Dou et al. (2016).**
-  [COLING 2016 Paper](https://aclanthology.org/C16-1022)
-  Explores multilingual embedding alignment methods to address semantic divergence.
-
 - **Hu et al. (2020). "XTREME: A Massively Multilingual Multi-task Benchmark for Evaluating Cross-lingual Generalization."**
-  [arXiv:2003.11080](https://arxiv.org/abs/2003.11080)
+  [Paper](https://arxiv.org/abs/2003.11080)
   A benchmark covering a range of cross-lingual transfer tasks.
 
 - **Zinkevich et al. (2022). "Google’s Best Practices for ML Engineering."**

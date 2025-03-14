@@ -1,33 +1,92 @@
-# Notebooks
+# NLP Course Notebooks
 
-Here you'll be oriented to the notebooks to practice the class.
+This directory contains all the Jupyter notebooks for the Advanced NLP Classes. These notebooks provide hands-on experience with the concepts covered in the lectures.
 
-## Class 1
-- [Notebook](../notebooks/class1.ipynb)
+## Table of Contents
 
-## Class 2
-- [Notebook](../notebooks/class2.ipynb)
+### Python Fundamentals (Session 1)
 
-## Class 3
-- [Notebook](../notebooks/class3.ipynb)
+These notebooks cover the essential Python skills needed for NLP:
 
-## Class 4
-- [Notebook](../notebooks/class4.ipynb)
+- **[Python Types](../notebooks/support/Session_1_1_Python_1o1_1.ipynb)**: Understanding Python's type system, from basic to advanced types
+- **[Python Classes](../notebooks/support/Session_1_1_Python_1o1_2.ipynb)**: Object-oriented programming in Python
+- **[Python Dataframes](../notebooks/support/Session_1_1_Python_1o1_3.ipynb)**: Working with pandas for data manipulation
+- **[Python NumPy](../notebooks/support/Session_1_1_Python_1o1_4.ipynb)**: Numerical computing with NumPy
+- **[Python scikit-learn](../notebooks/support/Session_1_1_Python_1o1_5.ipynb)**: Introduction to machine learning with scikit-learn
 
-## Class 5
-- [Notebook](../notebooks/class5.ipynb)
+### NLP Techniques (Session 1)
 
-## Class 6
-- [Notebook](../notebooks/class6.ipynb)
+- **[Baseline with regexes and spaCy](../notebooks/support/Session_1_2_baselines.ipynb)**: Implementing simple but effective baseline approaches
+- **[TF-IDF: how to judge its quality?](../notebooks/support/Session_1_3_TFIDF.ipynb)**: Understanding and implementing TF-IDF
+- **[BM25: a better TF-IDF, judge through different metrics](../notebooks/support/Session_1_4_BM25.ipynb)**: Advanced information retrieval techniques
 
-## Class 7
-- [Notebook](../notebooks/class7.ipynb)
+## Learning Objectives
 
-## Class 8
-- [Notebook](../notebooks/class8.ipynb)
+Each notebook is designed with specific learning objectives:
 
-## Class 9
-- [Notebook](../notebooks/class9.ipynb)
+1. **Python Fundamentals**: Ensure you have the necessary programming skills for NLP
+2. **Baseline Approaches**: Learn to implement and evaluate simple NLP solutions
+3. **Text Representation**: Understand how to convert text into numerical representations
+4. **Evaluation Metrics**: Learn how to properly evaluate NLP models
 
-## Class 10
-- [Notebook](../notebooks/class10.ipynb)
+## Setup Instructions
+
+### Prerequisites
+
+- Python 3.11 or higher
+- Poetry (for dependency management)
+
+### Installation
+
+We use Poetry to manage dependencies. Follow these steps to set up your environment:
+
+#### 1. Install Poetry
+
+**macOS / Linux**:
+```bash
+curl -sSL https://install.python-poetry.org | python3 -
+```
+
+**Windows**:
+```powershell
+(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
+```
+
+#### 2. Clone the repository and install dependencies
+
+```bash
+git clone https://github.com/agombert/AdvancedNLPClasses.git
+cd AdvancedNLPClasses
+poetry install
+```
+
+#### 3. Install additional dependencies for notebooks
+
+```bash
+poetry add pandas numpy matplotlib scikit-learn spacy jupyter
+poetry run python -m spacy download en_core_web_sm
+```
+
+#### 4. Launch Jupyter Notebook
+
+```bash
+poetry run jupyter notebook
+```
+
+Navigate to the `notebooks` directory to access all the notebooks.
+
+### Troubleshooting
+
+If you encounter issues with the installation:
+
+- **macOS**: You might need to install Xcode command-line tools: `xcode-select --install`
+- **Ubuntu**: Ensure you have build essentials: `sudo apt-get install build-essential`
+- **Windows**: Make sure you have the Microsoft C++ Build Tools installed
+
+## Contributing
+
+If you find errors or have suggestions for improving these notebooks, please open an issue or submit a pull request.
+
+## License
+
+These notebooks are provided for educational purposes as part of the Advanced NLP Classes at Barcelona School of Economics.
