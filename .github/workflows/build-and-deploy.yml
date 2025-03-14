@@ -16,8 +16,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
-    # On force ici Ubuntu 22.04 plutôt que 'ubuntu-latest' ou 'ubuntu-24.04'
+  build:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
@@ -44,12 +43,24 @@ jobs:
       - name: Build MkDocs
         run: poetry run mkdocs build --clean
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
+      - name: Ensure .nojekyll file exists
+        run: |
+          touch site/.nojekyll
+          echo "=== Checking site directory content ==="
+          ls -la site/
 
-      # Utiliser une approche alternative pour déployer sur GitHub Pages
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          folder: site  # Le répertoire généré par "mkdocs build"
-          branch: gh-pages  # La branche où déployer
+          path: ./site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

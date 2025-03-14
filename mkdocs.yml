@@ -48,3 +48,7 @@ use_directory_urls: true
 # Redirection automatique vers index.md
 extra:
   homepage: index.md
+
+# Fichiers à copier dans le répertoire de build
+extra_files:
+  - .nojekyll
