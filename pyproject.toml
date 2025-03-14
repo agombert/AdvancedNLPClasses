@@ -21,6 +21,3 @@ pre-commit = "^4.1.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
-[tool.poetry.scripts]
-make-pdfs = "bse_nlp.make_pdfs:main"
