@@ -6,11 +6,11 @@ Below, I've provided a short overview of each main section of the course. Even i
 
 ---
 
-## Professor
+## Lecturer
 
 **Arnault Gombert**
 
-I’m your instructor for this course, and I’ll be here to guide you through each topic step by step. Feel free to reach out if you have any questions or need additional support. My goal is to help you not only understand the theory but also gain hands-on practice in building NLP solutions.
+I’m your lecturer for this course, and I’ll be here to guide you through each topic step by step. Feel free to reach out if you have any questions or need additional support. My goal is to help you not only understand the theory but also gain hands-on practice in building NLP solutions.
 
 ---
 

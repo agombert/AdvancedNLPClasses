@@ -8,17 +8,17 @@ This directory contains all the Jupyter notebooks for the Advanced NLP Classes. 
 
 These notebooks cover the essential Python skills needed for NLP:
 
-- **[Python Types](../notebooks/support/Session_1_1_Python_1o1_1.ipynb)**: Understanding Python's type system, from basic to advanced types
-- **[Python Classes](../notebooks/support/Session_1_1_Python_1o1_2.ipynb)**: Object-oriented programming in Python
-- **[Python Dataframes](../notebooks/support/Session_1_1_Python_1o1_3.ipynb)**: Working with pandas for data manipulation
-- **[Python NumPy](../notebooks/support/Session_1_1_Python_1o1_4.ipynb)**: Numerical computing with NumPy
-- **[Python scikit-learn](../notebooks/support/Session_1_1_Python_1o1_5.ipynb)**: Introduction to machine learning with scikit-learn
+- **[Python Types](https://github.com/agombert/AdvancedNLPClasses/blob/main/notebooks/support/Session_1_1_Python_1o1_1.ipynb)**: Understanding Python's type system, from basic to advanced types
+- **[Python Classes](https://github.com/agombert/AdvancedNLPClasses/blob/main/notebooks/support/Session_1_1_Python_1o1_2.ipynb)**: Object-oriented programming in Python
+- **[Python Dataframes](https://github.com/agombert/AdvancedNLPClasses/blob/main/notebooks/support/Session_1_1_Python_1o1_3.ipynb)**: Working with pandas for data manipulation
+- **[Python NumPy](https://github.com/agombert/AdvancedNLPClasses/blob/main/notebooks/support/Session_1_1_Python_1o1_4.ipynb)**: Numerical computing with NumPy
+- **[Python scikit-learn](https://github.com/agombert/AdvancedNLPClasses/blob/main/notebooks/support/Session_1_1_Python_1o1_5.ipynb)**: Introduction to machine learning with scikit-learn
 
 ### NLP Techniques (Session 1)
 
-- **[Baseline with regexes and spaCy](../notebooks/support/Session_1_2_baselines.ipynb)**: Implementing simple but effective baseline approaches
-- **[TF-IDF: how to judge its quality?](../notebooks/support/Session_1_3_TFIDF.ipynb)**: Understanding and implementing TF-IDF
-- **[BM25: a better TF-IDF, judge through different metrics](../notebooks/support/Session_1_4_BM25.ipynb)**: Advanced information retrieval techniques
+- **[Baseline with regexes and spaCy](https://github.com/agombert/AdvancedNLPClasses/blob/main/notebooks/support/Session_1_2_baselines.ipynb)**: Implementing simple but effective baseline approaches
+- **[TF-IDF: how to judge its quality?](https://github.com/agombert/AdvancedNLPClasses/blob/main/notebooks/support/Session_1_3_TFIDF.ipynb)**: Understanding and implementing TF-IDF
+- **[BM25: a better TF-IDF, judge through different metrics](https://github.com/agombert/AdvancedNLPClasses/blob/main/notebooks/support/Session_1_4_BM25.ipynb)**: Advanced information retrieval techniques
 
 ## Learning Objectives
 
