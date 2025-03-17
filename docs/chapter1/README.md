@@ -13,8 +13,8 @@
     - [Python numpy](../notebooks/support/Session_1_1_Python_1o1_4.ipynb)
     - [Python scikit-learn](../notebooks/support/Session_1_1_Python_1o1_5.ipynb)
 - [Baseline with regexes and spaCy](Session_1_2_baselines.md)
-- [TF-IDF: how to judge its quality?](../notebooks/support/Session_1_3_tfidf.ipynb)
-- [BM25: a better TF-IDF, judge through different metrics](../notebooks/support/Session_1_4_BM25.ipynb)
+- [TF-IDF: how to judge its quality?](Session_1_3_tfidf.md)
+- [BM25: a better TF-IDF, judge through different metrics](Session_1_4_BM25.md)
 
 ---
 
