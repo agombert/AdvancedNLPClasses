@@ -360,6 +360,81 @@ plt.tight_layout()
 plt.show()
 ```
 
+We see interesting patterns here. For positive label, the top tokens are mostly related to sentiment. Words like "great", "wonderful", "excellent", "fantastic" are all positive words. For negative label, the top tokens are mostly related to sentiment. Words like "bad", "terrible", "horrible", "awful" are all negative words.
+
+Nevertheless, we see some tokens that are not related to sentiment but are still important for the classification. For example, "today" or "script" are important for the classification but they are not related to sentiment. It looks like the model overfits on those tokens because they may be present too many times in the corpus for positive or negative reviews.
+
+Let's check that hypothesis by looking at the probability to have a positive or negative review depending on the presence of a token.
+
+```python
+# Get the TF-IDF vectorizer from the pipeline
+tfidf = pipeline.named_steps['tfidf']
+
+# Get the vocabulary and feature names
+vocabulary = tfidf.vocabulary_
+feature_names = tfidf.get_feature_names_out()
+
+# We just want to know if a word appears or not
+# Transform the training data
+X_count = tfidf.transform(train_df["text"])
+
+# Convert to binary (1 if word appears, 0 if not)
+X_binary = (X_count > 0).astype(int)
+
+# Get the labels
+y = train_df["label"].values
+
+# Calculate probabilities
+word_sentiment_probs = {}
+
+# Total counts for each sentiment
+positive_count = np.sum(y == 1)
+negative_count = np.sum(y == 0)
+total_count = len(y)
+
+# For each word in the vocabulary
+for i, word in enumerate(feature_names):
+    # Get documents containing this word
+    docs_with_word = X_binary[:, i].toarray().flatten()
+
+    # Count documents with this word for each sentiment
+    positive_with_word = np.sum(docs_with_word & (y == 1))
+    negative_with_word = np.sum(docs_with_word & (y == 0))
+    total_with_word = np.sum(docs_with_word)
+
+    if total_with_word > 0:  # Avoid division by zero
+        # P(positive | word)
+        p_positive_given_word = positive_with_word / total_with_word
+
+        # P(negative | word)
+        p_negative_given_word = negative_with_word / total_with_word
+
+        # Store the probabilities
+        word_sentiment_probs[word] = {
+            'P(positive|word)': p_positive_given_word,
+            'P(negative|word)': p_negative_given_word,
+            'count': total_with_word,
+            'positive_count': positive_with_word,
+            'negative_count': negative_with_word
+        }
+
+# Convert to DataFrame for easier analysis
+probs_df = pd.DataFrame.from_dict(word_sentiment_probs, orient='index')
+
+# Sort by probability of positive sentiment
+most_positive_words = probs_df.sort_values(by='P(positive|word)', ascending=False).head(20)
+most_negative_words = probs_df.sort_values(by='P(negative|word)', ascending=False).head(20)
+
+# Display results
+print("Words most associated with positive sentiment:")
+print(most_positive_words[['P(positive|word)', 'count']])
+
+print("\nWords most associated with negative sentiment:")
+print(most_negative_words[['P(negative|word)', 'count']])
+```
+
+
+
 ```python
 # Check the sentiment probabilities for specific words
 print(word_sentiment_probs["today"])
@@ -401,6 +476,71 @@ for i in range(10):
     print('--------------------------------')
 ```
 
+This is quit interesting to see the results as  we see words like "American", "think" or "right" which are highlighted in red and words like "maybe", "tell" or "film", that are highlighted in green. WE see also a lot of names.
+
+But it looks weird as those words are not related to sentiment. It looks like the model overfits on those tokens.
+
+One potential solution for this problem would be to consider only bigrams or trigrams as features just to increase the context of the tokens. One way would be to use the `ngram_range` parameter in the TF-IDF vectorizer. We could also increase the `min_df` parameter to remove words that are not present in enough documents and reduce words that are present in too many documents such as "film" or "movie".
+
+Let's try to see if this hypothesis is correct by running the pipeline with different stop words. Also we see that the word "like" is in red generally, maybe we should use it with more context ? because like and don't like would dramatically change the sentiment of the review.
+
+```python
+from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
+
+new_stop_words = ["film", "movie", "american", "think", "right", "maybe", "tell",
+                  "couple", "want", "gets", "get", "john", "carter", "rice", "day", "apes",
+                  "say"]
+
+for stop_words in [ENGLISH_STOP_WORDS, ENGLISH_STOP_WORDS.union(new_stop_words)]:
+    print(f"\nEvaluating with stop_words = {stop_words}")
+    tfidf_params["stop_words"] = list(stop_words)
+    pipeline.set_params(tfidf=TfidfVectorizer(**tfidf_params))
+    pipeline.fit(train_df["text"], train_df["label"])
+    preds = pipeline.predict(dev_df["text"])
+    acc = accuracy_score(dev_df["label"], preds)
+    precision = precision_score(dev_df["label"], preds)
+    recall = recall_score(dev_df["label"], preds)
+    f1 = f1_score(dev_df["label"], preds)
+    print(f"Dev Accuracy: {acc*100:.2f}%")
+    print(f"Dev Precision: {precision*100:.2f}%")
+    print(f"Dev Recall: {recall*100:.2f}%")
+    print(f"Dev F1-score: {f1*100:.2f}%")
+```
+
+```python
+tfidf = pipeline.named_steps['tfidf']
+logreg = pipeline.named_steps['logreg']
+
+vocabulary = tfidf.vocabulary_
+feature_names = tfidf.get_feature_names_out()
+coefficients = logreg.coef_[0]
+
+def highlight_review(review, threshold=0.5):
+    tokens = review.split()
+    highlighted = []
+    for token in tokens:
+        token_clean = token.lower()
+        if token_clean in feature_names:
+            # Find index of token in the vocabulary
+            idx = np.where(feature_names == token_clean)[0][0]
+            coef = coefficients[idx]
+            # Color positive words in green and negative in red
+            if coef > threshold:
+                token = f'<span style="color:green">{token}</span>'
+            elif coef < -threshold:
+                token = f'<span style="color:red">{token}</span>'
+        highlighted.append(token)
+    return ' '.join(highlighted)
+
+
+
+for i in range(10):
+    sample_review = test_df['text'].iloc[i]
+    display(HTML(highlight_review(sample_review, threshold=0.1)))
+    print('--------------------------------')
+```
+
 We see that we have removed the words that are not related to sentiment and the model is more focused on the sentiment of the review. But we see others. Maybe we should just limit the vocabulary size to the most important words—the ones that are really important for the classification. This should be investigated.
 
-We see that the model stays with equivalent results. It means that the stop words are not important for the classification. Plus we now have a slightly stronger confidence in the results as we know that the model is not overfitting on those stop words. We would need to investigate further to see if we can improve the results by removing other stop words and feeling confident enough to put such models in production. We don't want the user looking at results and seeing that a word like "film" or "movie" drove the results the user will lose confidence in the model.
+We see that the model stays with equivalent results. It means that the stop words we removed are not so important for the classification as the model can handle the classification without them.
+We would need to investigate further to see if we can improve the results by removing other stop words and feeling confident enough to put such models in production. We don't want the user looking at results and seeing that a word like "film" or "movie" drove the results the user will lose confidence in the model.
