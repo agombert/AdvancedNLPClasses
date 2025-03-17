@@ -2,6 +2,8 @@
 
 ### Neural Networks, BERT, attention, Transformers, Word Embeddings, LLMs
 
+
+- [Elements of Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/)
 - Van Rijsbergen, C. J. (1979). Information Retrieval (2nd ed.). Butterworth-Heinemann.
 - Wang et al. (2019) GLUE: A Multi-Task Benchmark And Analysis Platform For Natural Language Understanding
 - Hue et al. (2020) X-TREME: A Massively Multilingual Multi-task Benchmark for Evaluating Cross-lingual Generalization
