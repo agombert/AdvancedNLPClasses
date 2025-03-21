@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<!-- MathJax Configuration -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+      ignoreHtmlClass: 'tex2jax_ignore',
+      processHtmlClass: 'tex2jax_process'
+    }
+  };
+</script>
+
+<!-- Load MathJax -->
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+<!-- Optional: Add custom styling for code and math -->
+<style>
+  pre {
+    background-color: #f6f8fa;
+    border-radius: 3px;
+    padding: 16px;
+    overflow: auto;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 85%;
+  }
+
+  .MathJax {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .math-block {
+    margin: 1em 0;
+    overflow-x: auto;
+  }
+</style>
+
+<!-- Content from the page -->
+<div class="math-content">
+  {{ content }}
+</div>
