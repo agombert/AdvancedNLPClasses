@@ -19,6 +19,7 @@ spacy = "^3.8.4"
 datasets = "^3.4.0"
 transformers = "^4.49.0"
 torch = "^2.6.0"
+pymdown-extensions = "^10.14.3"
 
 
 [tool.poetry.group.dev.dependencies]
