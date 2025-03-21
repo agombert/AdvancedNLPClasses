@@ -7,11 +7,11 @@
 ### 📓 Notebooks:
 
 - [Python 1o1]:
-    - [Python types](../notebooks/support/Session_1_1_Python_1o1_1.ipynb)
-    - [Python classes](../notebooks/support/Session_1_1_Python_1o1_2.ipynb)
-    - [Python dataframes](../notebooks/support/Session_1_1_Python_1o1_3.ipynb)
-    - [Python numpy](../notebooks/support/Session_1_1_Python_1o1_4.ipynb)
-    - [Python scikit-learn](../notebooks/support/Session_1_1_Python_1o1_5.ipynb)
+    - [Python types](Session_1_1_Python_1o1_1.md)
+    - [Python classes](Session_1_1_Python_1o1_2.md)
+    - [Python dataframes](Session_1_1_Python_1o1_3.md)
+    - [Python numpy](Session_1_1_Python_1o1_4.md)
+    - [Python scikit-learn](Session_1_1_Python_1o1_5.md)
 - [Baseline with regexes and spaCy](Session_1_2_baselines.md)
 - [TF-IDF: how to judge its quality?](Session_1_3_tfidf.md)
 - [BM25: a better TF-IDF, judge through different metrics](Session_1_4_BM25.md)
