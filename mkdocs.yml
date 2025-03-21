@@ -29,6 +29,7 @@ theme:
     - navigation.indexes
     - navigation.sections
     - navigation.top
+    - content.code.copy
   palette:
     - scheme: default
       primary: indigo
@@ -42,14 +43,44 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+# Add repository URL to show GitHub link at the top
+repo_url: https://github.com/agombert/AdvancedNLPClasses
+repo_name: agombert/AdvancedNLPClasses
 
 plugins:
-  - mkdocs-jupyter
   - search
+  - mkdocs-jupyter:
+      execute: false
+      include_source: true
 
-# Configuration pour les fichiers statiques (PDFs)
+# Configuration for static files (PDFs)
 use_directory_urls: true
 
-# Fichiers à copier dans le répertoire de build
-extra_files:
-  - .nojekyll
+# Use 'extra' to copy additional files (instead of 'extra_files')
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/agombert/AdvancedNLPClasses
+
+# Add this to handle static files like PDFs
+docs_dir: docs
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
