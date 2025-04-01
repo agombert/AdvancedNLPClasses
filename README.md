@@ -15,9 +15,8 @@ The course is structured into three main parts:
 
 - **docs/**: Course documentation and lecture notes
   - **pdfs/**: PDF versions of lecture slides
-  - **chapter*/**: Content for each session
+  - **chapter\*/**: Content for each session
 - **notebooks/**: Jupyter notebooks for hands-on exercises
-- **bse_nlp/**: Python package with utilities for the course
 
 ## Getting Started
 
