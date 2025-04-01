@@ -53,7 +53,7 @@ I’ll walk you through the **TF-IDF (Term Frequency–Inverse Document Frequenc
 - **Rudi Seitz (2020). "Understanding TF-IDF and BM-25."** - [Blog Post](https://kmwllc.com/index.php/2020/03/20/understanding-tf-idf-and-bm-25/)
   A comprehensive guide to understanding TF-IDF its limitations and why BM-25 is a better alternative.
 
-- **Van Rijsbergen, C. J. (1979). _Information Retrieval (2nd ed.)_** - [Book](http://www.dcs.gla.ac.uk/Keith/Preface.html)
+- **Van Rijsbergen, C. J. (1979). "Information Retrieval (2nd ed.)"** - [Book](http://www.dcs.gla.ac.uk/Keith/Preface.html)
   A foundational text on the principles of information retrieval systems.
 
 - **Gupta et al. (2014). "Improved pattern learning for bootstrapped entity extraction."** - [Paper](https://aclanthology.org/W14-1611/)
