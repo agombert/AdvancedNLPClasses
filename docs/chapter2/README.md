@@ -6,10 +6,9 @@
 
 ### 📓 Notebooks
 
-- **Neural Networks Fundamentals**
-  - [Intro to Neural Nets & Backprop (NumPy)](Session_2_1_NN_numpy.ipynb)
+  - [Intro to Neural Nets & Backprop (NumPy)](Session_2_1_NeuralNets_with_Numpy.ipynb)
   - [Simple RNN for Text Generation (Tiny Shakespeare)](Session_2_2_Text_Generation_with_RNN.ipynb)
-  - [LSTM for Sequence Classification](Session_2_3_LSTM_classif.ipynb)
+  - [LSTM for Sequence Classification](Session_2_3_LSTM_Classif.ipynb)
 
 ---
 
@@ -71,5 +70,3 @@ In this second session, we move beyond the baselines of Session 1 and dive into 
 - **Vanishing & Exploding Gradients**: In a toy RNN, we’ll visualize how gradients can shrink or explode, and learn about gradient clipping.
 - **Recurrent Language Model**: Train an RNN (or LSTM) on a small text corpus (e.g., Tiny Shakespeare) and watch it generate new text sequences.
 - **Comparisons**: We’ll show how gating mechanisms (LSTM/GRU) mitigate the issues in vanilla RNNs.
-
-By the end, you’ll not only know **how** neural networks and RNNs work, but also **why** they’re essential for modern NLP pipelines.
