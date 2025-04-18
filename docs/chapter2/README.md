@@ -42,6 +42,9 @@ In this second session, we move beyond the baselines of Session 1 and dive into 
 - **Karpahty A. (2016) "Yes You Should Understand Backprop"** - [Blog Post](https://karpathy.medium.com/yes-you-should-understand-backprop-e2f06eab496b)
   A blog post explaining backpropagation in detail.
 
+- **Silviu P. (2016) "Written Memories: Understanding, Deriving and Extending the LSTM"** - [Blog Post](https://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm)
+  A blog post explaining RNN and LSTM logic in detail.
+
 - **Colah, C. (2015) "Understanding LSTMs"** - [Blog Post](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
   A blog post explaining LSTMs in detail.
 
@@ -69,4 +72,3 @@ In this second session, we move beyond the baselines of Session 1 and dive into 
 - **Implementing Gradient Descent**: We’ll code a simple neural net from scratch (via NumPy or PyTorch) to see how forward/backward passes work.
 - **Vanishing & Exploding Gradients**: In a toy RNN, we’ll visualize how gradients can shrink or explode, and learn about gradient clipping.
 - **Recurrent Language Model**: Train an RNN (or LSTM) on a small text corpus (e.g., Tiny Shakespeare) and watch it generate new text sequences.
-- **Comparisons**: We’ll show how gating mechanisms (LSTM/GRU) mitigate the issues in vanilla RNNs.
