@@ -1,64 +1,40 @@
-# Practical NLP - 1
+## 🎓 Course Materials - Practical NLP - 1
 
-## Session 4: Hands-on NLP Pipeline Development
+## Session 4: Text Classification Pipelines and Explainability
 
-This practical session focuses on implementing and evaluating NLP pipelines, applying the theoretical concepts learned in previous sessions to real-world text processing tasks.
+In this hands-on session, we walk through the evolution of **text classification pipelines**, from traditional approaches like **TF-IDF + linear classifiers** to modern **deep learning models with LSTM** and **pretrained word embeddings** like **Word2Vec**. The session closes with an introduction to **model explainability** using **LIME**, giving students insight into how models make decisions.
 
-### Learning Objectives
+This notebook is designed as a modular blueprint that can be reused and extended for many text classification tasks.
 
-- Develop end-to-end NLP pipelines for text processing tasks
-- Implement and evaluate baseline models using traditional NLP techniques
-- Build neural network-based models for text classification and sequence labeling
-- Integrate word embeddings into NLP pipelines
-- Learn best practices for model evaluation and performance analysis
+### 📓 Notebooks
 
-### Topics Covered
+- [Session 4: From TF-IDF to LSTMs and Explainability](Session_4.ipynb)
 
-#### Baseline Pipeline & Metrics Evaluation
+---
 
-- Text preprocessing techniques (tokenization, normalization, etc.)
-- Feature extraction methods (bag-of-words, n-grams, TF-IDF)
-- Traditional machine learning algorithms for text classification
-- Evaluation metrics for NLP tasks (accuracy, precision, recall, F1-score)
-- Cross-validation strategies for robust evaluation
-- Error analysis techniques
+### 🎯 Learning Objectives
 
-#### LSTM Pipeline
+1. Understand how to turn raw text into machine-readable input (TF-IDF, tokenization, embeddings).
+2. Build baseline and deep models (logistic regression, BiLSTM).
+3. Integrate **pre-trained embeddings** (Word2Vec) into custom pipelines.
+4. Apply **explainability tools** like LIME to interpret model behavior.
+5. Compare models using quantitative and qualitative evaluation (metrics & examples).
 
-- Implementing recurrent neural networks for text processing
-- Building LSTM-based models for sequence classification and generation
-- Handling variable-length sequences
-- Batching and padding strategies
-- Training and optimization techniques
-- Regularization methods to prevent overfitting
+---
 
-#### Word Embedding Add-ons
+### 📖 Bibliography & Recommended Reading
 
-- Integrating pre-trained word embeddings into neural models
-- Fine-tuning embeddings for specific tasks
-- Handling out-of-vocabulary words
-- Embedding visualization and analysis
-- Combining static and contextual embeddings
+- **scikit-learn TF-IDF Documentation** – [Link](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html)
+- **spaCy Tokenizer Docs** – [Link](https://spacy.io/api/tokenizer)
+- **Gensim Word2Vec Tutorial** – [Link](https://radimrehurek.com/gensim/models/word2vec.html)
+- **LIME GitHub Repo** – [Link](https://github.com/marcotcr/lime)
 
-#### Training Our Own Embeddings
+---
 
-- Corpus preparation for embedding training
-- Implementing custom embedding training pipelines
-- Hyperparameter tuning for embedding quality
-- Domain-specific embeddings vs. general-purpose embeddings
-- Evaluating custom embeddings on downstream tasks
+### 💻 Practical Components
 
-### Practical Components
-
-- Hands-on implementation of complete NLP pipelines
-- Comparative analysis of different model architectures
-- Performance optimization techniques
-- Debugging common issues in NLP model development
-- Group exercises and collaborative problem-solving
-
-### Tools and Frameworks
-
-- Python libraries: NLTK, spaCy, scikit-learn
-- Deep learning frameworks: PyTorch, TensorFlow/Keras
-- Embedding tools: Gensim, FastText
-- Evaluation frameworks and visualization tools
+- 🧪 Build a **text classifier from scratch** using `TF-IDF + LogisticRegression`.
+- 🧠 Train an **LSTM** with one-hot or pre-trained embeddings.
+- 📦 Use **Word2Vec** embeddings from Hugging Face.
+- 🔍 Explain and debug predictions with **LIME** for real-world NLP workflows.
+- 🎯 Compare models using both **metrics** and **example-level outputs**.
