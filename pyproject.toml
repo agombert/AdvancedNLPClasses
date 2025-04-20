@@ -28,6 +28,9 @@ tensorflow-hub = "^0.16.1"
 tqdm = "^4.67.1"
 fasttext = "^0.9.3"
 staticvectors = "^0.2.0"
+wordcloud = "^1.9.4"
+lime = "^0.2.0.1"
+shap = "^0.47.2"
 
 
 [tool.poetry.group.dev.dependencies]
