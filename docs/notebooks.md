@@ -74,6 +74,20 @@ These notebooks cover the essential Python skills needed for NLP:
 - **[TF-IDF: how to judge its quality?](chapter1/Session_1_3_tfidf.ipynb)**: Understanding and implementing TF-IDF
 - **[BM25: a better TF-IDF, judge through different metrics](chapter1/Session_1_4_BM25.ipynb)**: Advanced information retrieval techniques
 
+### 📝 Chapter 2: Neural Networks, Backpropagation & RNNs
+
+- **[Intro to Neural Nets & Backprop (NumPy)](chapter2/Session_2_1_NeuralNets_with_Numpy.ipynb)**: Implementing neural networks with NumPy
+- **[Simple RNN for Text Generation (Tiny Shakespeare)](chapter2/Session_2_2_Text_Generation_with_RNN.ipynb)**: Generating text with a simple RNN
+- **[LSTM for Sequence Classification](chapter2/Session_2_3_LSTM_Classif.ipynb)**: Building an LSTM for sequence classification
+
+### 📝 Chapter 3: Word Embeddings
+
+- **[Word2Vec from Scratch - with negative sampling](chapter3/Session_3_1_Word2Vec_Training.ipynb)**: Implementing Word2Vec from scratch with negative sampling
+- **[Embedding Evaluation: Intrinsic and Extrinsic](chapter3/Session_3_2_Embedding_Evaluation.ipynb)**: Evaluating word embeddings using both intrinsic and extrinsic metrics
+- **[Classification with Embeddings](chapter3/Session_3_3_Embedding_Classification.ipynb)**: Using embeddings for classification tasks
+
+
+
 ## 🤝 Contributing
 
 If you find errors or have suggestions for improving these notebooks, please open an issue or submit a pull request.
