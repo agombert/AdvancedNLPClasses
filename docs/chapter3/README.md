@@ -8,7 +8,7 @@
 
 - [Word2Vec from Scratch - with negative sampling](Session_3_1_Word2Vec_Training.ipynb)
 - [Embedding Evaluation: Intrinsic and Extrinsic](Session_3_2_Embedding_Evaluation.ipynb)
-- [Contextualized Embeddings with ELMo vs Static Embeddings](Session_3_3_Contextual_Embeddings.ipynb)
+- [Classification with Embeddings](Session_3_3_Embedding_Classification.ipynb)
 
 ---
 
