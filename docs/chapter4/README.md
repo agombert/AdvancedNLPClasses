@@ -9,6 +9,7 @@ This notebook is designed as a modular blueprint that can be reused and extended
 ### 📓 Notebooks
 
 - [Session 4: From TF-IDF to LSTMs and Explainability](Session_4.ipynb)
+- [Session 4: correction](Session_4_correction.ipynb)
 
 ---
 
