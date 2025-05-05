@@ -31,6 +31,8 @@ staticvectors = "^0.2.0"
 wordcloud = "^1.9.4"
 lime = "^0.2.0.1"
 shap = "^0.47.2"
+evaluate = "^0.4.3"
+accelerate = "^1.6.0"
 
 
 [tool.poetry.group.dev.dependencies]
