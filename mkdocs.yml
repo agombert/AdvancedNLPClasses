@@ -55,7 +55,6 @@ plugins:
   - mkdocs-jupyter:
       execute: false
       include_source: true
-      ignore_widgets: true
 
 # Configuration for static files (PDFs)
 use_directory_urls: true
