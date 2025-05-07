@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "bse_nlp"}]
 
 [tool.poetry.dependencies]
-python = "^3.11,<3.13"
+python = "^3.10, <3.13"
 mkdocs = "^1.6.1"
 mkdocs-material = "^9.6.8"
 mkdocs-jupyter = "^0.25.1"
@@ -19,11 +19,9 @@ datasets = "^3.4.0"
 transformers = "^4.49.0"
 torch = "^2.6.0"
 pymdown-extensions = "^10.14.3"
-tensorflow = "^2.19.0"
 keras-tuner = "^1.4.7"
 plotly = "^6.0.1"
 tabulate = "^0.9.0"
-tensorflow-hub = "^0.16.1"
 tqdm = "^4.67.1"
 fasttext = "^0.9.3"
 staticvectors = "^0.2.0"
@@ -36,7 +34,8 @@ jupyter = "^1.1.1"
 ipykernel = "^6.29.5"
 seaborn = "^0.13.2"
 numpy = "1.26"
-tensorflow = "2.15.0"
+tensorflow-hub = "^0.16.1"
+tensorflow = "^2.19.0"
 
 
 [tool.poetry.group.dev.dependencies]
