@@ -6051,6 +6051,8 @@ files = [
 ]
 
 [package.dependencies]
+accelerate = {version = ">=0.20.3", optional = true, markers = "extra == \"train\""}
+datasets = {version = "*", optional = true, markers = "extra == \"train\""}
 huggingface-hub = ">=0.20.0"
 Pillow = "*"
 scikit-learn = "*"
@@ -6066,6 +6068,39 @@ onnx = ["optimum[onnxruntime] (>=1.23.1)"]
 onnx-gpu = ["optimum[onnxruntime-gpu] (>=1.23.1)"]
 openvino = ["optimum-intel[openvino] (>=1.20.0)"]
 train = ["accelerate (>=0.20.3)", "datasets"]
+
+[[package]]
+name = "setfit"
+version = "1.1.2"
+description = "Efficient few-shot learning with Sentence Transformers"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "setfit-1.1.2-py3-none-any.whl", hash = "sha256:1547707ae9f218a42a195c4af88b5fc34ae120ca21d89f29aca05804b6b9552d"},
+    {file = "setfit-1.1.2.tar.gz", hash = "sha256:d126e5ec439c3c0832426eed287007b66c543ff2fdd1ff4312719215ca00d439"},
+]
+
+[package.dependencies]
+datasets = ">=2.15.0"
+evaluate = ">=0.3.0"
+huggingface_hub = ">=0.24.0"
+packaging = "*"
+scikit-learn = "*"
+sentence-transformers = {version = ">=3", extras = ["train"]}
+transformers = ">=4.41.0"
+
+[package.extras]
+absa = ["spacy (<3.7.6)"]
+codecarbon = ["codecarbon (<2.6.0)"]
+compat-tests = ["datasets (==2.15.0)", "evaluate (==0.3.0)", "fsspec (<2023.12.0)", "huggingface_hub (==0.24.0)", "hummingbird-ml", "onnx (!=1.16.2)", "onnxruntime", "openvino", "packaging", "pandas (<2)", "pytest", "pytest-cov", "scikit-learn", "sentence-transformers[train] (==3)", "skl2onnx", "spacy (<3.7.6)", "transformers (==4.41.0)"]
+dev = ["black", "codecarbon (<2.6.0)", "flake8", "hf-doc-builder (>=0.3.0)", "hummingbird-ml", "isort", "onnx (!=1.16.2)", "onnxruntime", "openvino", "optuna", "pytest", "pytest-cov", "skl2onnx", "spacy (<3.7.6)", "tabulate"]
+docs = ["hf-doc-builder (>=0.3.0)"]
+onnx = ["onnx (!=1.16.2)", "onnxruntime", "skl2onnx"]
+openvino = ["hummingbird-ml", "onnx (!=1.16.2)", "onnxruntime", "openvino", "skl2onnx"]
+optuna = ["optuna"]
+quality = ["black", "flake8", "isort", "tabulate"]
+tests = ["hummingbird-ml", "onnx (!=1.16.2)", "onnxruntime", "openvino", "pytest", "pytest-cov", "skl2onnx", "spacy (<3.7.6)"]
 
 [[package]]
 name = "setuptools"
@@ -7896,4 +7931,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10, <3.13"
-content-hash = "528a54cd8ba4bb59da2a77d6f10fd36257b7eb0a4f16a1148817774a6e3f8d60"
+content-hash = "830547be39fe9586200e71c135327d8dbde14112f7c4d3bd4f6250e1e4b6371c"
