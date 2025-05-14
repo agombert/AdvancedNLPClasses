@@ -7,8 +7,8 @@
 ### 📓 Notebooks
 
 - [Topic Modeling with BERTopic](Session_6_1_BERTopic_Topic_Modeling.ipynb)
-- [Zero-Shot Classification with BERT/RoBERTa/DeBERTa](Session_6_2_Zero_Shot_Classification.ipynb)
-- [Generating Movie Reviews with GPT-2 Prompting](Session_6_3_Generation_with_GPT2.ipynb)
+- [Zero-Shot Classification with BERT/RoBERTa/DistilBERT](Session_6_2_Zero_Shot_Classification.ipynb)
+- [Generating Movie Reviews with GPT Prompting](Session_6_3_Generation_with_GPT.ipynb)
 
 ---
 
@@ -23,7 +23,7 @@ We explore the remarkable generalization abilities of **BERT-like models**, lear
 1. Understand the motivations for Zero-Shot and Few-Shot Learning in NLP.
 2. Explore how BERT and Transformer-based models naturally support these paradigms.
 3. Apply different approaches to zero/few-shot classification, including **NLI**, **cloze prompting**, and **embedding similarity**.
-4. Learn to generate task-specific labeled data using **GPT-2 prompting**.
+4. Learn to generate task-specific labeled data using **GPT prompting**.
 5. Fine-tune Sentence Transformers with contrastive learning using **SetFit**.
 
 ---
@@ -101,5 +101,5 @@ We explore the remarkable generalization abilities of **BERT-like models**, lear
 ### 💻 Practical Components
 
 - **Topic Modeling with BERTopic**: Use embeddings and clustering to explore topic structures in reviews.
-- **Zero-Shot Classification**: Leverage Hugging Face pipelines with BERT/RoBERTa/DeBERTa for inference-only classification.
+- **Zero-Shot Classification**: Leverage Hugging Face pipelines with BERT/RoBERTa/DistilBERT for inference-only classification.
 - **Prompting with GPT-2**: Learn to generate realistic and diverse movie reviews using carefully crafted prompts.
