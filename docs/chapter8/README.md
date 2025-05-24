@@ -1,66 +1,40 @@
-# Practical NLP - 2
+## 🎓 Course Materials - Practical NLP - 2
 
-## Session 8: Advanced NLP Implementation
+## Session 8: Fine-Tuning BERT, Few-Shot Learning, and Bias in NLP
 
-This hands-on session builds on previous knowledge to implement advanced NLP techniques, with a focus on transformer-based models, fine-tuning strategies, and bias detection.
+In this hands-on session, we explore cutting-edge approaches in **advanced NLP**, including **fine-tuning BERT**, leveraging **few-shot learning with SetFit**, and investigating **biases in NLP models** (like gender biases using WinoGrad schemas).
 
-### Learning Objectives
+This notebook is designed as a modular, reusable blueprint for state-of-the-art NLP techniques.
 
-- Gain practical experience fine-tuning transformer models for specific tasks
-- Learn strategies for working with limited training data
-- Understand techniques for adapting models to low-resource scenarios
-- Develop skills in detecting and addressing biases in NLP models
-- Apply best practices for model evaluation and deployment
+### 📓 Notebooks
 
-### Topics Covered
+* [Session 8: BERT, Few-Shot Learning, and Bias in NLP](docs/chapter8/Session_8.ipynb)
 
-#### Fine-tuning a BERT Model
+---
 
-- Setting up the fine-tuning pipeline
-- Preparing data for transformer models
-- Hyperparameter optimization for fine-tuning
-- Techniques for efficient fine-tuning (gradient accumulation, mixed precision)
-- Saving and loading fine-tuned models
-- Deploying fine-tuned models for inference
+### 🎯 Learning Objectives
 
-#### How Much Data to Get the Best Results?
+1. **Fine-tune BERT** for text classification with a small dataset.
+2. Understand and implement **few-shot learning** using the SetFit framework.
+3. Evaluate models using **standard metrics** (accuracy, precision, recall, F1-score, confusion matrix, ROC/AUC).
+4. Analyze and **identify biases** in BERT models using WinoGrad schemas.
+5. Discuss **model fairness** and interpretability in modern NLP.
 
-- Data efficiency in transformer models
-- Learning curves and diminishing returns
-- Strategies for data augmentation in NLP
-- Active learning approaches for efficient data annotation
-- Cross-validation strategies for small datasets
-- Balancing model size and data requirements
+---
 
-#### Low Resource? No Problem
+### 📖 Bibliography & Recommended Reading
 
-- Transfer learning for low-resource languages and domains
-- Few-shot and zero-shot learning techniques
-- Cross-lingual transfer methods
-- Unsupervised and self-supervised approaches
-- Leveraging multilingual models for low-resource scenarios
-- Domain adaptation strategies
+* **Hugging Face Transformers Documentation** – [Link](https://huggingface.co/docs/transformers/index)
+* **SetFit: Efficient Few-Shot Classification** – [Link](https://github.com/huggingface/setfit)
+* **WinoGrad Schema Challenge** – [Link](https://cs.nyu.edu/~davise/papers/WinogradSchemas/WS.html)
+* **Fairness in Machine Learning** – [Link](https://fairmlbook.org/)
 
-#### Detecting Biases
+---
 
-- Implementing bias detection metrics
-- Analyzing model outputs for various demographic groups
-- Counterfactual data augmentation for bias testing
-- Visualizing attention patterns to identify bias sources
-- Evaluating fairness across different tasks and contexts
-- Documenting model limitations and potential biases
+### 💻 Practical Components
 
-### Practical Components
-
-- Hands-on implementation of BERT fine-tuning for classification tasks
-- Experiments with varying amounts of training data
-- Implementing and evaluating low-resource NLP techniques
-- Building a bias detection and evaluation pipeline
-- Group project: developing a fair and efficient NLP system
-
-### Tools and Frameworks
-
-- Hugging Face Transformers library
-- PyTorch and TensorFlow
-- Fairness indicators and bias measurement tools
-- Model analysis and visualization libraries
+* 🏗️ **Fine-tune BERT** on AG News corpus using Hugging Face Transformers.
+* 🔄 **Train a few-shot classifier** with **SetFit** using just 32 examples.
+* 🧪 **Experiment with data augmentation** via prompt-based methods.
+* 🕵️‍♂️ **Evaluate model fairness** and **gender bias** in predictions.
+* 🎯 **Compare models** using quantitative metrics (ROC/AUC, F1, etc.) and **qualitative outputs** (example-level analysis).
