@@ -41,6 +41,7 @@ litellm = "^1.68.2"
 hdbscan = "^0.8.40"
 bertopic = "^0.17.0"
 setfit = "^1.1.2"
+codecarbon = "^3.0.1"
 
 
 [tool.poetry.group.dev.dependencies]

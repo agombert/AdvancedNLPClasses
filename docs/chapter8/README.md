@@ -8,7 +8,7 @@ This notebook is designed as a modular, reusable blueprint for state-of-the-art 
 
 ### 📓 Notebooks
 
-* [Session 8: BERT, Few-Shot Learning, and Bias in NLP](docs/chapter8/Session_8.ipynb)
+* [Session 8: BERT, Few-Shot Learning, and Bias in NLP](Session_8.ipynb)
 
 ---
 
