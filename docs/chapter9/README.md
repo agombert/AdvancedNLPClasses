@@ -1,55 +1,94 @@
-# LLM Introduction
+## 🎓 Course Materials
 
-## Session 9: Large Language Models
+### 📑 Slides
 
-This session introduces the latest generation of Large Language Models (LLMs), exploring their capabilities, limitations, and practical applications through prompt engineering and fine-tuning.
+[Download Session 9 Slides (PDF)](../pdfs/2025_BSE_NLP_Session_9.pdf)
 
-### Learning Objectives
+### 📓 Notebooks
 
-- Understand the architecture and capabilities of modern Large Language Models
-- Learn effective prompt engineering techniques for various tasks
-- Explore different approaches to fine-tuning LLMs
-- Gain practical experience working with state-of-the-art language models
-- Understand the limitations and challenges of current LLM technology
+- [Prompt Engineering](Session_9_1_Prompt_Engineering.ipynb)
+- [RAG](Session_9_2_RAG.ipynb)
+- [LoRA](Session_9_3_LoRA.ipynb)
 
-### Topics Covered
+---
 
-#### Prompt Engineering & Fine-tuning
+## 🚀 Session 9: Large Language Models (LLMs) Basics
 
-- Zero-shot learning: using LLMs without task-specific examples
-- Few-shot learning through in-context examples
-- Chain of thought prompting for complex reasoning tasks
-- Formatting outputs for structured information extraction
-- Prompt design principles and best practices
-- Instruction tuning and alignment techniques
-- Parameter-efficient fine-tuning methods (LoRA, P-tuning, etc.)
-- Full fine-tuning vs. adapter-based approaches
+In this ninth session, we dive into the world of **Large Language Models (LLMs)** — from the foundations of ChatGPT to advanced prompt engineering and innovative training techniques like LoRA and QLoRA.
 
-#### Advanced LLM Concepts
+We explore the **training processes** (SFT, RM, PPO), how models like **GitHub Copilot and Cursor** boost productivity, and advanced topics like **Retrieval-Augmented Generation (RAG)**.
 
-- Scaling laws and emergent abilities in LLMs
-- Model architectures: decoder-only vs. encoder-decoder
-- Open vs. closed models: comparing capabilities and limitations
-- Multilingual capabilities and cross-lingual transfer
-- Multimodal extensions to language models
-- Retrieval-augmented generation
-- Efficient inference techniques
+### 🎯 Learning Objectives
 
-### Recommended Reading
+1. Understand the key components of **LLM training**: Supervised Fine-Tuning (SFT), Reward Modeling (RM), and Proximal Policy Optimization (PPO).
+2. Learn about **prompt engineering, few-shot learning**, and structured output generation.
+3. Analyze the **advantages and challenges** of RAG and why hypothetical document embeddings (HyDE) can overcome limitations.
+4. Grasp how **fine-tuning (LoRA, QLoRA)** enables adapting large models on a single GPU.
+5. Connect LLM-powered tools like **Cursor, LlamaIndex**, and **Vera** to real-world applications.
 
-- Brown et al. (2020) "Language Models are Few-Shot Learners"
-- Le Scao et al. (2022) "BLOOM: A 176B-Parameter Open-Access Multilingual Language Model"
-- Touvron et al. (2023) "LLaMA: Open and Efficient Foundation Language Models"
-- Suau et al. (2022) "Self-conditioning Pre-Trained Language Models"
-- Agüera et al. (2022) "Do Large Language Models Understand Us?"
-- Kaswan et al. (2023) "The (Ab)Use of Open Source Code to Train Large Language Models"
-- Chen et al. (2024) "What is the Role of Small Models in the LLM Era: A Survey"
+---
 
-### Practical Components
+### 📚 Topics Covered
 
-- Hands-on prompt engineering for various NLP tasks
-- Implementing chain-of-thought reasoning with LLMs
-- Fine-tuning smaller language models on specific domains
-- Evaluating LLM performance across different tasks
-- Comparing different prompting strategies and their effectiveness
-- Building applications that leverage LLM capabilities
+#### 🔧 Training LLMs
+- **Supervised Fine-Tuning (SFT)**: Aligning models to conversational data.
+- **Reward Modeling (RM)**: Learning from human feedback.
+- **Proximal Policy Optimization (PPO)**: Aligning outputs with preferences.
+- **Direct Preference Optimization (DPO), SimPO**: Evolving preference-optimization methods.
+- **Limitations without RLHF**: Overfitting and bias risks.
+
+#### 💡 Applications of LLMs
+- **Cursor**: AI-powered code editor for efficient development.
+- **LlamaIndex**: RAG for internal data search.
+- **Vera**: Fact-checking for public trust.
+
+#### ⚙️ Maximizing LLM Potential
+- **Prompt Engineering**: Techniques (few-shot, chain of thoughts, schema-constrained outputs).
+- **Sampling Parameters**: Temperature, top-p sampling trade-offs.
+- **Retrieval-Augmented Generation (RAG)**: Naive vs. advanced retrieval strategies.
+- **Hypothetical Document Embeddings (HyDE)**: Solving RAG’s limitations.
+
+#### 🎯 Model Adaptation on Limited Hardware
+- **Training Complexity**: Challenges of training a 7B parameter model.
+- **LoRA**: Low-Rank Adaptation for single-GPU fine-tuning.
+- **QLoRA**: Quantized LoRA for reduced memory footprint.
+
+#### 🌟 UX & Human Feedback
+- **Copilot Example**: Integrating UX for continuous learning.
+- **User feedback**: Passive vs. active feedback collection.
+
+---
+
+### 🧠 Key Takeaways
+
+| Component/Technique | Purpose                           | Benefit                                    |
+|---------------------|-----------------------------------|--------------------------------------------|
+| SFT                 | Initial conversational fine-tuning | Groundwork for aligned responses           |
+| RM                  | Score LLM responses via humans    | Learn to rank and prefer high-quality text |
+| PPO/DPO/SimPO       | Optimize with preferences         | Aligns LLM outputs with human needs        |
+| LoRA                | Efficient fine-tuning             | Train large models on a single GPU         |
+| Prompt Engineering  | Guide LLM outputs                 | More accurate, context-aware interactions  |
+| RAG/HyDE            | External knowledge retrieval      | Boosts factuality and relevance            |
+
+---
+
+### 📖 Recommended Reading
+
+- **Argilla Blog Posts** – [argilla.io/blog](https://argilla.io/blog)
+  Insightful articles on DPO, ORPO, SimPO, and other advanced LLM training methods.
+- **Gao et al. (2022)** – “Precise Zero-Shot Dense Retrieval without Relevance Labels”
+  Paper introducing Hypothetical Document Embeddings (HyDE).
+- **Hu et al. (2021)** - "LoRA: Low-Rank Adaptation of Large Language Models"
+  Paper introducing LoRA.
+- **Blog post** - [blog.eleuther.ai/transformer-math/](https://blog.eleuther.ai/transformer-math/)
+  Blog post explaining the math behind LLM computation.
+- **Blog post** - [kipp.ly/transformer-inference-arithmetic/](https://kipp.ly/transformer-inference-arithmetic/)
+  Blog post explaining the arithmetic behind LLM inference.
+
+---
+
+### 💻 Practical Components
+
+- **Code Examples**: Fine-tuning with LoRA on single GPUs.
+- **Prompt Engineering Snippets**: Showcasing few-shot learning and chain-of-thought examples.
+- **OpenAI API Usage**: Python code for prompt optimization and few-shot prompting.
