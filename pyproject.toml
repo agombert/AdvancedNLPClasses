@@ -42,6 +42,10 @@ hdbscan = "^0.8.40"
 bertopic = "^0.17.0"
 setfit = "^1.1.2"
 codecarbon = "^3.0.1"
+qdrant-client = "^1.14.2"
+rank-bm25 = "^0.2.2"
+colbert = "^0.40"
+colbert-ai = "^0.2.21"
 
 
 [tool.poetry.group.dev.dependencies]
