@@ -46,6 +46,9 @@ qdrant-client = "^1.14.2"
 rank-bm25 = "^0.2.2"
 colbert = "^0.40"
 colbert-ai = "^0.2.21"
+ace-tools = "^0.0"
+wikipedia = "^1.4.0"
+duckduckgo-search = "^8.0.2"
 
 
 [tool.poetry.group.dev.dependencies]
