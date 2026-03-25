@@ -1,6 +1,8 @@
 data/
 secrets/
 .claude/
+.cache/
+.site/
 
 # Notebooks
 .ipynb_checkpoints/
