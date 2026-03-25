@@ -7,22 +7,22 @@ This directory contains all the Jupyter notebooks for the Advanced NLP Classes. 
 ### 🔧 Prerequisites
 
 - Python 3.11 or higher
-- Poetry (for dependency management)
+- uv (for dependency management)
 
 ### 📦 Installation
 
-We use Poetry to manage dependencies. Follow these steps to set up your environment:
+We use uv to manage dependencies. Follow these steps to set up your environment:
 
-#### 1️⃣ Install Poetry
+#### 1️⃣ Install uv
 
 **macOS / Linux**:
 ```bash
-curl -sSL https://install.python-poetry.org | python3 -
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
 **Windows**:
 ```powershell
-(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
 #### 2️⃣ Clone the repository and install dependencies
@@ -30,20 +30,19 @@ curl -sSL https://install.python-poetry.org | python3 -
 ```bash
 git clone https://github.com/agombert/AdvancedNLPClasses.git
 cd AdvancedNLPClasses
-poetry install
+uv sync
 ```
 
 #### 3️⃣ Install additional dependencies for notebooks
 
 ```bash
-poetry add pandas numpy matplotlib scikit-learn spacy jupyter
-poetry run python -m spacy download en_core_web_sm
+uv run python -m spacy download en_core_web_sm
 ```
 
 #### 4️⃣ Launch Jupyter Notebook
 
 ```bash
-poetry run jupyter notebook
+uv run jupyter notebook
 ```
 
 Navigate to the `notebooks` directory to access all the notebooks.

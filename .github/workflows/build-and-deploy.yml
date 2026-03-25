@@ -4,13 +4,11 @@ on:
   push:
     branches: [ "main" ]
 
-# Autorise le déploiement sur Pages avec le token GitHub
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Empêche deux déploiements simultanés
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -27,11 +25,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install Poetry
-        run: pip install poetry
+      - name: Install uv
+        run: pip install uv
 
-      - name: Install dependencies
-        run: poetry install --only docs
+      - name: Install docs dependencies
+        run: uv sync --group docs --no-install-project
 
       - name: Check PDFs directory
         run: |
@@ -41,7 +39,7 @@ jobs:
           ls -la docs/pdfs/2025_BSE_NLP_Session_1.pdf || echo "PDF file not found"
 
       - name: Build MkDocs
-        run: poetry run mkdocs build --clean
+        run: uv run mkdocs build --clean
 
       - name: Ensure .nojekyll file exists
         run: |

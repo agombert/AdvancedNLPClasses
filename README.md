@@ -23,7 +23,7 @@ The course is structured into three main parts:
 ### Prerequisites
 
 - Python 3.11 or higher
-- Poetry (for dependency management)
+- uv (for dependency management)
 
 ### Installation
 
@@ -34,33 +34,26 @@ git clone https://github.com/agombert/AdvancedNLPClasses.git
 cd AdvancedNLPClasses
 ```
 
-2. **Install dependencies with Poetry**
+2. **Install dependencies with uv**
 
 ```bash
-# Install Poetry if you don't have it
-curl -sSL https://install.python-poetry.org | python3 -
+# Install uv if you don't have it
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # Install project dependencies
-poetry install
+uv sync
 ```
 
-3. **Set up notebook environment**
+3. **Start the documentation server**
 
 ```bash
-# Download necessary models and datasets
-poetry run setup-notebooks
+uv run mkdocs serve
 ```
 
-4. **Start the documentation server**
+4. **Launch Jupyter for notebooks**
 
 ```bash
-poetry run mkdocs serve
-```
-
-5. **Launch Jupyter for notebooks**
-
-```bash
-poetry run jupyter notebook
+uv run jupyter notebook
 ```
 
 ## Course Materials
