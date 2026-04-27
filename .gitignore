@@ -4,6 +4,8 @@ secrets/
 .cache/
 .site/
 
+classes/
+
 # Notebooks
 .ipynb_checkpoints/
 */.ipynb_checkpoints/*
