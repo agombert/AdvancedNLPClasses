@@ -85,6 +85,34 @@ These notebooks cover the essential Python skills needed for NLP:
 - **[Embedding Evaluation: Intrinsic and Extrinsic](chapter3/Session_3_2_Embedding_Evaluation.ipynb)**: Evaluating word embeddings using both intrinsic and extrinsic metrics
 - **[Classification with Embeddings](chapter3/Session_3_3_Embedding_Classification.ipynb)**: Using embeddings for classification tasks
 
+### 📝 Chapter 5: Transformers & BERT
+
+- **[BERT with Hugging Face](chapter5/Session_5_1_BERT_HF_Implementation.ipynb)**: Loading and using pre-trained BERT models via the Hugging Face Transformers library
+- **[Attention Visualization](chapter5/Session_5_2_Attention_Visualization.ipynb)**: Inspecting and visualizing self-attention patterns inside transformer layers
+
+### 📝 Chapter 6: Few-shot & Transfer Learning
+
+- **[Topic Modeling with BERTopic](chapter6/Session_6_1_BERTopic_Topic_Modeling.ipynb)**: Discovering topics in text using transformer embeddings and BERTopic
+- **[Zero-Shot Classification](chapter6/Session_6_2_Zero_Shot_Classification.ipynb)**: Classifying text without labeled data using NLI-based zero-shot models
+- **[Text Generation with GPT](chapter6/Session_6_3_Generation_with_GPT.ipynb)**: Generating text and labels with GPT-style autoregressive models
+
+### 📝 Chapter 7: Bias Detection & Mitigation
+
+- **[Gender Bias Detection](chapter7/Session_7_1_Gender_Bias_Detection.ipynb)**: Detecting gender biases in language models and embeddings
+- **[Cross-Language Evaluation](chapter7/Session_7_2_Cross_Language_Evaluation.ipynb)**: Evaluating multilingual models and their behavior across languages
+- **[Reducing a BERT Model](chapter7/Session_7_3_reduce_BERT_model.ipynb)**: Distilling and compressing BERT for faster, lighter inference
+
+### 📝 Chapter 9: Prompt Engineering & RAG
+
+- **[Prompt Engineering](chapter9/Session_9_1_Prompt_Engineering.ipynb)**: Designing zero-shot, few-shot and chain-of-thought prompts for LLMs
+- **[Retrieval-Augmented Generation (RAG)](chapter9/Session_9_2_RAG.ipynb)**: Building a RAG pipeline that grounds LLM answers in retrieved documents
+
+### 📝 Chapter 10: LLMs, Tools & Agents
+
+- **[LLM with Tools](chapter10/Session_10_1_LLM_with_Tools.ipynb)**: Equipping an LLM with external tools and function calling
+- **[LLM as a Judge](chapter10/Session_10_2_LLM_as_a_Judge.ipynb)**: Using an LLM to evaluate the quality of model outputs
+- **[ReAct Framework](chapter10/Session_10_3_ReAct_Framework.ipynb)**: Implementing the ReAct loop combining reasoning steps and tool actions
+
 
 
 ## 🤝 Contributing
