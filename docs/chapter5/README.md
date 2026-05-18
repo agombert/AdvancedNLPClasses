@@ -2,7 +2,7 @@
 
 ### 📑 Slides
 
-[Download Session 5 Slides (PDF)](../pdfs/2025_BSE_NLP_Session_5.pdf)
+[Download Session 5 Slides (PDF)](../pdfs/BSE_NLP_Session_5.pdf)
 
 ### 📓 Notebooks
 
