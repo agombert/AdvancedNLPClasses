@@ -43,6 +43,8 @@ dependencies = [
     "ace-tools>=0.0",
     "wikipedia>=1.4.0",
     "duckduckgo-search>=8.0.2",
+    "gensim>=4.4.0",
+    "sentence-transformers>=3.0.0",
 ]
 
 [dependency-groups]

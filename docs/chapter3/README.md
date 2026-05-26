@@ -4,11 +4,14 @@
 
 [Download Session 3 Slides (PDF)](../pdfs/BSE_NLP_Session_3.pdf)
 
+[Download Bonus Slides — Interpreting Embeddings: Cosine vs. L2 (PDF)](../pdfs/BSE_NLP_Session_5_Embeddings.pdf)
+
 ### 📓 Notebooks
 
 - [Word2Vec from Scratch - with negative sampling](Session_3_1_Word2Vec_Training.ipynb)
 - [Embedding Evaluation: Intrinsic and Extrinsic](Session_3_2_Embedding_Evaluation.ipynb)
 - [Classification with Embeddings](Session_3_3_Embedding_Classification.ipynb)
+- [Interpreting Static Embeddings: Norm, Distance & Geometry](Session_3_4_Interpreting_Static_Embeddings.ipynb) — [bonus slides](../pdfs/BSE_NLP_Session_5_Embeddings.pdf)
 
 ---
 

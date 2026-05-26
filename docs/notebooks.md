@@ -84,11 +84,13 @@ These notebooks cover the essential Python skills needed for NLP:
 - **[Word2Vec from Scratch - with negative sampling](chapter3/Session_3_1_Word2Vec_Training.ipynb)**: Implementing Word2Vec from scratch with negative sampling
 - **[Embedding Evaluation: Intrinsic and Extrinsic](chapter3/Session_3_2_Embedding_Evaluation.ipynb)**: Evaluating word embeddings using both intrinsic and extrinsic metrics
 - **[Classification with Embeddings](chapter3/Session_3_3_Embedding_Classification.ipynb)**: Using embeddings for classification tasks
+- **[Interpreting Static Embeddings](chapter3/Session_3_4_Interpreting_Static_Embeddings.ipynb)**: Proving on GloVe why cosine beats L2 — curse of dimensionality, normalization, and the norm/frequency/PCA story ([bonus slides](pdfs/BSE_NLP_Session_5_Embeddings.pdf))
 
 ### 📝 Chapter 5: Transformers & BERT
 
 - **[BERT with Hugging Face](chapter5/Session_5_1_BERT_HF_Implementation.ipynb)**: Loading and using pre-trained BERT models via the Hugging Face Transformers library
 - **[Attention Visualization](chapter5/Session_5_2_Attention_Visualization.ipynb)**: Inspecting and visualizing self-attention patterns inside transformer layers
+- **[Interpreting Contextual Embeddings](chapter5/Session_5_3_Interpreting_Contextual_Embeddings.ipynb)**: Anisotropy, rogue dimensions, post-hoc fixes (whitening) and Sentence-BERT on real distilBERT vectors ([bonus slides](pdfs/BSE_NLP_Session_5_Embeddings.pdf))
 
 ### 📝 Chapter 6: Few-shot & Transfer Learning
 

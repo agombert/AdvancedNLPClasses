@@ -4,11 +4,14 @@
 
 [Download Session 5 Slides (PDF)](../pdfs/BSE_NLP_Session_5.pdf)
 
+[Download Bonus Slides — Interpreting Embeddings: Cosine vs. L2 (PDF)](../pdfs/BSE_NLP_Session_5_Embeddings.pdf)
+
 ### 📓 Notebooks
 
 - [Implementing BERT with Hugging Face Transformers](Session_5_1_BERT_HF_Implementation.ipynb)
 - [Visualizing Attention Mechanisms](Session_5_2_Attention_Visualization.ipynb)
-- [Comparing LSTM vs. BERT vs. TinyBERT vs. ModernBERT](Session_5_3_Model_Comparison.ipynb)
+- Comparing LSTM vs. BERT vs. TinyBERT vs. ModernBERT _(coming soon)_
+- [Interpreting Contextual Embeddings: Anisotropy, Rogue Dimensions & Fixes](Session_5_3_Interpreting_Contextual_Embeddings.ipynb) — [bonus slides](../pdfs/BSE_NLP_Session_5_Embeddings.pdf)
 
 ---
 
