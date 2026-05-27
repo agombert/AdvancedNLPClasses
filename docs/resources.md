@@ -74,3 +74,75 @@
 - Haim et al. (2025) [What's in a Name? Auditing Large Language Models for Race and Gender Bias](https://arxiv.org/abs/2402.14875): Uses name perturbations to surface racial and gender bias in LLM advice across high-stakes scenarios.
 - Bai et al. (2025) [Explicitly Unbiased Large Language Models Still Form Biased Associations](https://www.pnas.org/doi/10.1073/pnas.2416228122): Shows LLMs that pass explicit bias tests still encode stereotypical associations measurable via implicit-association probes.
 - Hartzog (2026) [How AI Destroys Institutions](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5181709): Argues AI systems erode the procedural and trust foundations that make institutions work.
+
+### Papers cited in the slides (added)
+
+- Luhn, H. P. (1957) [A Statistical Approach to Mechanized Encoding and Searching of Literary Information](https://ieeexplore.ieee.org/document/5392697): Early work on term-frequency statistics for indexing and search.
+- Spärck Jones, K. (1972) [A Statistical Interpretation of Term Specificity and Its Application in Retrieval](https://www.emerald.com/insight/content/doi/10.1108/eb026526/full/html): Introduces inverse document frequency, the IDF in TF-IDF.
+- Nesterov, Y. (1983) [A Method for Solving the Convex Programming Problem with Convergence Rate O(1/k²)](https://www.mathnet.ru/eng/dan46009): Nesterov accelerated gradient, a look-ahead variant of momentum.
+- Rumelhart et al. (1986) [Learning Representations by Back-propagating Errors](https://www.nature.com/articles/323533a0): Popularizes backpropagation for training multilayer neural networks.
+- LeCun et al. (1989) [Backpropagation Applied to Handwritten Zip Code Recognition](https://ieeexplore.ieee.org/document/6795724): Foundational convolutional neural network trained end-to-end with backprop.
+- Hochreiter & Schmidhuber (1997) [Long Short-Term Memory](https://ieeexplore.ieee.org/abstract/document/6795963): Original LSTM, addressing vanishing gradients in RNNs.
+- Beyer et al. (1999) [When Is "Nearest Neighbor" Meaningful?](https://link.springer.com/chapter/10.1007/3-540-49257-7_15): Curse of dimensionality: distance contrast vanishes in high dimensions.
+- Qian, N. (1999) [On the Momentum Term in Gradient Descent Learning Algorithms](https://www.sciencedirect.com/science/article/abs/pii/S0893608098001166): Introduces the momentum term that accelerates gradient descent.
+- Fei-Fei et al. (2006) [One-Shot Learning of Object Categories](https://ieeexplore.ieee.org/document/1597116): Foundational one-shot learning work from computer vision.
+- Manning, Raghavan & Schütze (2008) [Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/): Standard reference for vector-space retrieval, TF-IDF, and evaluation.
+- Chang et al. (2008) [Importance of Semantic Representation: Dataless Classification](https://cdn.aaai.org/AAAI/2008/AAAI08-132.pdf): Early dataless text classification using semantic label representations.
+- Glorot & Bengio (2010) [Understanding the Difficulty of Training Deep Feedforward Neural Networks](https://proceedings.mlr.press/v9/glorot10a.html): Xavier/Glorot initialization for stable deep-network training.
+- Duchi et al. (2011) [Adaptive Subgradient Methods for Online Learning and Stochastic Optimization](https://jmlr.org/papers/v12/duchi11a.html): Adagrad, with per-parameter adaptive learning rates.
+- Pascanu et al. (2013) [On the Difficulty of Training Recurrent Neural Networks](https://proceedings.mlr.press/v28/pascanu13.html): Analyzes vanishing/exploding gradients and proposes gradient clipping.
+- Graves, A. (2013) [Generating Sequences With Recurrent Neural Networks](https://arxiv.org/abs/1308.0850): LSTM-based sequence generation, including peephole connections.
+- Mikolov et al. (2013) [Distributed Representations of Words and Phrases and Their Compositionality](https://arxiv.org/abs/1310.4546): Companion Word2Vec paper introducing skip-gram with negative sampling.
+- Bahdanau et al. (2014) [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473): The original attention mechanism for sequence-to-sequence models.
+- Cho et al. (2014) [Learning Phrase Representations using RNN Encoder-Decoder for SMT](https://aclanthology.org/D14-1179/): Introduces the GRU as a simpler alternative to LSTM.
+- Goodfellow et al. (2014) [Explaining and Harnessing Adversarial Examples](https://arxiv.org/abs/1412.6572): Adversarial perturbations that reveal model brittleness.
+- Kingma & Ba (2015) [Adam: A Method for Stochastic Optimization](https://arxiv.org/abs/1412.6980): The Adam optimizer combining momentum and adaptive learning rates.
+- Hinton et al. (2015) [Distilling the Knowledge in a Neural Network](https://arxiv.org/abs/1503.02531): Knowledge distillation from a large teacher into a smaller student.
+- Schroff et al. (2015) [FaceNet: A Unified Embedding for Face Recognition and Clustering](https://arxiv.org/abs/1503.03832): Introduces the triplet loss used in contrastive few-shot learning.
+- He et al. (2015) [Deep Residual Learning for Image Recognition](https://ieeexplore.ieee.org/document/7780459): Residual connections; the "degradation problem" generalizes to deep nets.
+- Han et al. (2015) [Learning Both Weights and Connections for Efficient Neural Networks](https://arxiv.org/abs/1506.02626): Magnitude-based pruning for compact, efficient networks.
+- Schakel & Wilson (2015) [Measuring Word Significance Using Distributed Representations of Words](https://arxiv.org/abs/1508.02297): Shows embedding norm grows with word frequency and significance.
+- Bolukbasi et al. (2016) [Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings](https://arxiv.org/abs/1607.06520): Surfaces and debiases gender stereotypes in word embeddings.
+- Molchanov et al. (2016) [Pruning Convolutional Neural Networks for Resource Efficient Inference](https://arxiv.org/abs/1611.06440): Iterative pruning guided by a Taylor-expansion importance criterion.
+- Ruder, S. (2016) [An Overview of Gradient Descent Optimization Algorithms](https://arxiv.org/abs/1609.04747): Survey of SGD variants (Momentum, Nesterov, Adagrad, RMSprop, Adam).
+- Mu & Viswanath (2018) [All-but-the-Top: Simple and Effective Postprocessing for Word Representations](https://arxiv.org/abs/1702.01417): Removing top principal components (mostly frequency) improves embeddings.
+- Caliskan et al. (2017) [Semantics Derived Automatically from Language Corpora Contain Human-like Biases](https://www.science.org/doi/10.1126/science.aal4230): Shows word embeddings encode documented human biases (WEAT).
+- Howard et al. (2017) [MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications](https://arxiv.org/abs/1704.04861): Depthwise-separable convolutions for efficient on-device inference.
+- McCann et al. (2017) [Learned in Translation: Contextualized Word Vectors (CoVe)](https://arxiv.org/abs/1708.00107): Contextual word vectors derived from a machine-translation encoder.
+- Zhao et al. (2017) [Men Also Like Shopping: Reducing Gender Bias Amplification using Corpus-level Constraints](https://aclanthology.org/D17-1323/): Shows models amplify dataset bias and constrains inference to reduce it.
+- Peters et al. (2017) [Semi-supervised Sequence Tagging with Bidirectional Language Models](https://aclanthology.org/P17-1161/): LM-augmented sequence tagging, a precursor to ELMo.
+- Garg et al. (2018) [Word Embeddings Quantify 100 Years of Gender and Ethnic Stereotypes](https://www.pnas.org/doi/10.1073/pnas.1720347115): Uses embeddings across decades to track shifting social stereotypes.
+- Jacob et al. (2018) [Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference](https://arxiv.org/abs/1712.05877): Integer quantization scheme for efficient inference.
+- Eubanks, V. (2018) [Automating Inequality](https://us.macmillan.com/books/9781250074317/automatinginequality): How automated decision systems harm poor and working-class people.
+- Prates et al. (2019) [Assessing Gender Bias in Machine Translation](https://arxiv.org/abs/1809.02208): Documents gender-stereotyped defaults in MT from gender-neutral languages.
+- Sap et al. (2019) [The Risk of Racial Bias in Hate Speech Detection](https://aclanthology.org/P19-1163/): Shows toxicity classifiers over-flag African-American English.
+- Beltagy et al. (2019) [SciBERT: A Pretrained Language Model for Scientific Text](https://arxiv.org/abs/1903.10676): Domain-adapted BERT for scientific literature.
+- Yang et al. (2019) [XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/abs/1906.08237): Permutation language modeling combining autoregressive and bidirectional context.
+- Lewis et al. (2019) [BART: Denoising Sequence-to-Sequence Pre-training](https://arxiv.org/abs/1910.13461): Denoising autoencoder pretraining for generation and comprehension.
+- Sanh et al. (2019) [DistilBERT, a Distilled Version of BERT](https://arxiv.org/abs/1910.01108): A smaller, faster BERT trained by knowledge distillation.
+- Shen et al. (2019) [Q-BERT: Hessian Based Ultra Low Precision Quantization of BERT](https://arxiv.org/abs/1909.05840): Mixed-precision quantization of BERT guided by Hessian information.
+- Ethayarajh (2019) [How Contextual are Contextualized Word Representations?](https://arxiv.org/abs/1909.00512): Documents anisotropy: contextual embeddings occupy a narrow cone.
+- West et al. (2019) [Discriminating Systems: Gender, Race and Power in AI](https://ainowinstitute.org/publication/discriminating-systems-gender-race-and-power-in-ai-2): Links workforce diversity gaps to biased AI systems.
+- Radford et al. (2019) [Language Models are Unsupervised Multitask Learners (GPT-2)](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf): Scaling autoregressive LMs for zero-shot transfer.
+- Reimers & Gurevych (2019) [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/abs/1908.10084): Siamese fine-tuning for semantically meaningful sentence embeddings.
+- Koenecke et al. (2020) [Racial Disparities in Automated Speech Recognition](https://www.pnas.org/doi/10.1073/pnas.1915768117): Measures large ASR word-error-rate gaps between Black and white speakers.
+- Joshi et al. (2020) [The State and Fate of Linguistic Diversity and Inclusion in the NLP World](https://aclanthology.org/2020.acl-main.560/): Quantifies how few languages NLP research actually serves.
+- Blodgett et al. (2020) [Language (Technology) is Power: A Critical Survey of "Bias" in NLP](https://arxiv.org/abs/2005.14050): Surveys 146 papers and critiques vague, mismatched notions of bias.
+- Barocas, Hardt & Narayanan (2019) [Fairness and Machine Learning](https://fairmlbook.org/): Textbook on statistical non-discrimination criteria and their limits.
+- Benjamin, R. (2019) [Race After Technology](https://www.ruhabenjamin.com/race-after-technology): Argues technology can encode and amplify racial hierarchies.
+- Green, B. (2019) ["Good" Isn't Good Enough](https://www.benzevgreen.com/wp-content/uploads/2019/11/19-ai4sg.pdf): Critiques "AI for social good" framing and calls for political reflexivity.
+- Su et al. (2021) [Whitening Sentence Representations for Better Semantics and Faster Retrieval](https://arxiv.org/abs/2103.15316): Whitening removes anisotropy and reduces embedding dimensionality.
+- Timkey & van Schijndel (2021) [All Bark and No Bite: Rogue Dimensions in Transformer Language Models Obscure Representational Quality](https://arxiv.org/abs/2109.04404): A few rogue dimensions dominate cosine similarity; standardization fixes it.
+- Nozza et al. (2021) [HONEST: Measuring Hurtful Sentence Completion in Language Models](https://aclanthology.org/2021.naacl-main.191/): A multilingual benchmark for hurtful completions in masked LMs.
+- Shin et al. (2021) [Constrained Language Models Yield Few-Shot Semantic Parsers](https://aclanthology.org/2021.emnlp-main.608/): Constrained decoding turns LLMs into few-shot semantic parsers.
+- Mukherjee et al. (2021) [XtremeDistilTransformers: Task Transfer for Task-agnostic Distillation](https://arxiv.org/abs/2106.04563): Task-agnostic distillation producing compact multilingual encoders.
+- Barbieri et al. (2022) [XLM-T: Multilingual Language Models in Twitter for Sentiment Analysis](https://arxiv.org/abs/2104.12250): Multilingual social-media transformer for sentiment tasks.
+- Wei et al. (2022) [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903): Intermediate reasoning steps unlock multi-step problem solving.
+- Gao et al. (2022) [Precise Zero-Shot Dense Retrieval without Relevance Labels (HyDE)](https://arxiv.org/abs/2212.10496): Hypothetical document embeddings for zero-shot dense retrieval.
+- Hu et al. (2021) [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685): Low-rank adapters for parameter-efficient fine-tuning.
+- Gao et al. (2021) [SimCSE: Simple Contrastive Learning of Sentence Embeddings](https://arxiv.org/abs/2104.08821): Contrastive objective yielding isotropic, high-quality sentence embeddings.
+- He et al. (2021) [DeBERTa: Decoding-enhanced BERT with Disentangled Attention](https://arxiv.org/abs/2006.03654): Disentangled content/position attention improving over BERT and RoBERTa.
+- Lasri et al. (2023) [EconBERTa: Towards Robust Extraction of Named Entities in Economics](https://aclanthology.org/2023.findings-emnlp.774/): Domain-adapted encoder and the ECON-IE dataset for economics NER.
+- Liu et al. (2023) [A Dynamic LLM-Powered Agent Network for Task-Oriented Agent Collaboration (DyLAN)](https://arxiv.org/abs/2310.02170): Multi-agent collaboration with automatic team optimization.
+- Liu et al. (2023) [What Makes Good Data for Alignment? (DEITA)](https://arxiv.org/abs/2312.15685): Automatic data selection that matches SOTA alignment with far less SFT data.
+- Tie et al. (2025) [A Survey on Post-training of Large Language Models](https://arxiv.org/abs/2503.06072): Survey of alignment, fine-tuning, and reasoning advances in LLMs.
