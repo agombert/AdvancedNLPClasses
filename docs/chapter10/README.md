@@ -66,7 +66,7 @@ We connect theory to practice with real-world examples and Python code for build
 - **[Huyen Chip](https://huyenchip.com/2025/01/07/agents.html)** – “Agents”
   A comprehensive guide to agents, including reflection and error correction.
 
-- **[Zheng et al. (2023)](https://arxiv.org/abs/2305.16291)** – “Judging LLM-as-a-Judge”
+- **[Zheng et al. (2023)](https://arxiv.org/abs/2306.05685)** – “Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena”
   Paper exploring how LLMs can reliably score and compare generated outputs.
 
 - **[Optimizing Instructions and Demonstrations for Multi-Stage Language Model Programs](https://aclanthology.org/2024.emnlp-main.525.pdf)** – “Optimizing Instructions and Demonstrations for Multi-Stage Language Model Programs”
