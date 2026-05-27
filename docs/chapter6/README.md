@@ -96,6 +96,21 @@ We explore the remarkable generalization abilities of **BERT-like models**, lear
 - **Snorkel: Weak Supervision for Training Data** – [Website](https://www.snorkel.org)
   Framework to label data using programmatic rules and heuristics.
 
+- **Schick & Schütze (2021): Generating Datasets with Pretrained Language Models** – [Paper](https://aclanthology.org/2021.emnlp-main.555/)
+  The DINO method for synthesizing labeled datasets without human annotation.
+
+- **Schroff et al. (2015): FaceNet: A Unified Embedding for Face Recognition and Clustering** – [Paper](https://arxiv.org/abs/1503.03832)
+  Introduces the triplet loss used in contrastive few-shot learning (e.g., SetFit).
+
+- **Chang et al. (2008): Importance of Semantic Representation: Dataless Classification** – [Paper](https://cdn.aaai.org/AAAI/2008/AAAI08-132.pdf)
+  Early dataless text classification using semantic label representations.
+
+- **Fei-Fei et al. (2006): One-Shot Learning of Object Categories** – [Paper](https://ieeexplore.ieee.org/document/1597116)
+  Foundational one-shot learning work from computer vision.
+
+- **Miller et al. (1976): The Influence of Pattern Similarity and Transfer Learning upon Training of a Base Perceptron B2** – [Reference](https://www.semanticscholar.org/paper/1d1d29bc55e3ab481cc7e3ed1ea1eea2d5fd9c83)
+  Early transfer-learning study cited for the history of the field.
+
 ---
 
 ### 💻 Practical Components

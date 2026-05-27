@@ -59,6 +59,9 @@ I’ll walk you through the **TF-IDF (Term Frequency–Inverse Document Frequenc
 - **Gupta et al. (2014). "Improved pattern learning for bootstrapped entity extraction."** - [Paper](https://aclanthology.org/W14-1611/)
   Discusses pattern-based bootstrapping approaches to entity extraction.
 
+- **Dou & Neubig (2021). "Word Alignment by Fine-tuning Embeddings on Parallel Corpora."** - [Paper](https://aclanthology.org/2021.eacl-main.181/)
+  Aligns words across languages with fine-tuned multilingual embeddings (slides cite the embedding-alignment line of work).
+
 - **Wang et al. (2019). "GLUE: A Multi-Task Benchmark And Analysis Platform For Natural Language Understanding."** - [Paper](https://aclanthology.org/W18-5446/) | [GLUE Benchmark](https://gluebenchmark.com)
   Proposes a widely adopted multi-task benchmark for evaluating NLP models.
 

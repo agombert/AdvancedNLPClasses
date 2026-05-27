@@ -67,6 +67,33 @@ In this second session, we move beyond the baselines of Session 1 and dive into 
 - **He et al. (2015). "Deep Residual Learning for Image Recognition."**  [Paper](https://ieeexplore.ieee.org/document/7780459)
   Not directly NLP, but the notion of “degradation problem” is generalizable to deep networks.
 
+- **LeCun et al. (1989). "Backpropagation Applied to Handwritten Zip Code Recognition."**  [Paper](https://ieeexplore.ieee.org/document/6795724)
+  Foundational convolutional neural network trained end-to-end with backpropagation.
+
+- **Ruder, S. (2016). "An Overview of Gradient Descent Optimization Algorithms."**  [Paper](https://arxiv.org/abs/1609.04747)
+  Survey of SGD variants (Momentum, Nesterov, Adagrad, RMSprop, Adam) used to train neural nets.
+
+- **Qian, N. (1999). "On the Momentum Term in Gradient Descent Learning Algorithms."**  [Paper](https://www.sciencedirect.com/science/article/abs/pii/S0893608098001166)
+  Introduces the momentum term that accelerates gradient descent.
+
+- **Nesterov, Y. (1983). "A Method for Solving the Convex Programming Problem with Convergence Rate O(1/k²)."**  [Paper](https://www.mathnet.ru/eng/dan46009)
+  Nesterov accelerated gradient, a look-ahead variant of momentum.
+
+- **Duchi et al. (2011). "Adaptive Subgradient Methods for Online Learning and Stochastic Optimization."**  [Paper](https://jmlr.org/papers/v12/duchi11a.html)
+  Adagrad: per-parameter adaptive learning rates.
+
+- **Kingma & Ba (2015). "Adam: A Method for Stochastic Optimization."**  [Paper](https://arxiv.org/abs/1412.6980)
+  The Adam optimizer combining momentum and adaptive learning rates.
+
+- **Glorot & Bengio (2010). "Understanding the Difficulty of Training Deep Feedforward Neural Networks."**  [Paper](https://proceedings.mlr.press/v9/glorot10a.html)
+  Xavier/Glorot weight initialization for stable deep-network training.
+
+- **Pascanu et al. (2013). "On the Difficulty of Training Recurrent Neural Networks."**  [Paper](https://proceedings.mlr.press/v28/pascanu13.html)
+  Analyzes vanishing/exploding gradients and proposes gradient clipping.
+
+- **Graves, A. (2013). "Generating Sequences With Recurrent Neural Networks."**  [Paper](https://arxiv.org/abs/1308.0850)
+  LSTM-based sequence generation, including peephole connections.
+
 ### 💻 Practical Components
 
 - **Implementing Gradient Descent**: We’ll code a simple neural net from scratch (via NumPy or PyTorch) to see how forward/backward passes work.

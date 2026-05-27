@@ -90,6 +90,56 @@ We also see how these embeddings are **evaluated** and how they can be applied t
 - **Peters et al. (2018): Deep Contextualized Word Representations** – [Paper](https://arxiv.org/abs/1802.05365)
   ELMo paper showing how dynamic embeddings outperform static ones on many tasks.
 
+- **Luhn, H. P. (1957): A Statistical Approach to Mechanized Encoding and Searching of Literary Information** – [Paper](https://ieeexplore.ieee.org/document/5392697)
+  Early work on term-frequency statistics for indexing and search.
+
+- **Spärck Jones, K. (1972): A Statistical Interpretation of Term Specificity and Its Application in Retrieval** – [Paper](https://www.emerald.com/insight/content/doi/10.1108/eb026526/full/html)
+  Introduces inverse document frequency, the IDF in TF-IDF.
+
+- **Manning, Raghavan & Schütze (2008): Introduction to Information Retrieval** – [Book](https://nlp.stanford.edu/IR-book/)
+  Standard reference for vector-space retrieval, TF-IDF, and evaluation.
+
+- **Mikolov et al. (2013): Distributed Representations of Words and Phrases and Their Compositionality** – [Paper](https://arxiv.org/abs/1310.4546)
+  Companion Word2Vec paper introducing skip-gram with negative sampling.
+
+- **McCann et al. (2017): Learned in Translation: Contextualized Word Vectors (CoVe)** – [Paper](https://arxiv.org/abs/1708.00107)
+  Contextual word vectors derived from a machine-translation encoder.
+
+- **Peters et al. (2017): Semi-supervised Sequence Tagging with Bidirectional Language Models** – [Paper](https://aclanthology.org/P17-1161/)
+  Pre-LM-augmented sequence tagging, a precursor to ELMo.
+
+- **Howard & Ruder (2018): Universal Language Model Fine-tuning for Text Classification (ULMFiT)** – [Paper](https://aclanthology.org/P18-1031/)
+  Transfer-learning recipe for fine-tuning language models on downstream tasks.
+
+- **Radford et al. (2019): Language Models are Unsupervised Multitask Learners (GPT-2)** – [Paper](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
+  Scaling autoregressive language models for zero-shot transfer.
+
+#### Bonus — Interpreting Static Embeddings: Norm, Distance & Geometry
+
+- **Schakel & Wilson (2015): Measuring Word Significance Using Distributed Representations of Words** – [Paper](https://arxiv.org/abs/1508.02297)
+  Shows embedding norm grows with word frequency and significance.
+
+- **Mu & Viswanath (2018): All-but-the-Top: Simple and Effective Postprocessing for Word Representations** – [Paper](https://arxiv.org/abs/1702.01417)
+  Removing the top principal components (mostly frequency) improves embeddings.
+
+- **Ethayarajh (2019): How Contextual are Contextualized Word Representations? Comparing the Geometry of BERT, ELMo, and GPT-2 Embeddings** – [Paper](https://arxiv.org/abs/1909.00512)
+  Documents anisotropy: contextual embeddings occupy a narrow cone.
+
+- **Timkey & van Schijndel (2021): All Bark and No Bite: Rogue Dimensions in Transformer Language Models Obscure Representational Quality** – [Paper](https://arxiv.org/abs/2109.04404)
+  A few rogue dimensions dominate cosine similarity; standardization fixes it.
+
+- **Su et al. (2021): Whitening Sentence Representations for Better Semantics and Faster Retrieval** – [Paper](https://arxiv.org/abs/2103.15316)
+  Whitening removes anisotropy and reduces embedding dimensionality.
+
+- **Reimers & Gurevych (2019): Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks** – [Paper](https://arxiv.org/abs/1908.10084)
+  Siamese fine-tuning to produce semantically meaningful sentence embeddings.
+
+- **Gao et al. (2021): SimCSE: Simple Contrastive Learning of Sentence Embeddings** – [Paper](https://arxiv.org/abs/2104.08821)
+  Contrastive objective that yields isotropic, high-quality sentence embeddings.
+
+- **Beyer et al. (1999): When Is "Nearest Neighbor" Meaningful?** – [Paper](https://link.springer.com/chapter/10.1007/3-540-49257-7_15)
+  Curse of dimensionality: distance contrast vanishes in high dimensions.
+
 ---
 
 ### 💻 Practical Components

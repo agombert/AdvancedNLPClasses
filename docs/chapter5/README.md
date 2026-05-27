@@ -89,6 +89,36 @@ We also explore **fine-tuning** BERT for downstream tasks, and examine several v
 - **Rogers et al. (2020): A Primer in BERTology** – [Paper](https://arxiv.org/abs/2002.12327)
   Analysis and interpretability of BERT’s internal behavior.
 
+- **Bahdanau et al. (2014): Neural Machine Translation by Jointly Learning to Align and Translate** – [Paper](https://arxiv.org/abs/1409.0473)
+  The original attention mechanism for sequence-to-sequence models.
+
+- **Liu et al. (2019): RoBERTa: A Robustly Optimized BERT Pretraining Approach** – [Paper](https://arxiv.org/abs/1907.11692)
+  Shows BERT was undertrained; longer training and more data improve it.
+
+- **Yang et al. (2019): XLNet: Generalized Autoregressive Pretraining for Language Understanding** – [Paper](https://arxiv.org/abs/1906.08237)
+  Permutation language modeling that combines autoregressive and bidirectional context.
+
+- **Lewis et al. (2019): BART: Denoising Sequence-to-Sequence Pre-training** – [Paper](https://arxiv.org/abs/1910.13461)
+  Denoising autoencoder pretraining for generation and comprehension.
+
+- **He et al. (2021): DeBERTa: Decoding-enhanced BERT with Disentangled Attention** – [Paper](https://arxiv.org/abs/2006.03654)
+  Disentangled content/position attention improving over BERT and RoBERTa.
+
+- **Sanh et al. (2019): DistilBERT, a Distilled Version of BERT** – [Paper](https://arxiv.org/abs/1910.01108)
+  A smaller, faster BERT trained by knowledge distillation.
+
+- **Beltagy et al. (2019): SciBERT: A Pretrained Language Model for Scientific Text** – [Paper](https://arxiv.org/abs/1903.10676)
+  Domain-adapted BERT for scientific literature.
+
+- **Barbieri et al. (2022): XLM-T: Multilingual Language Models in Twitter for Sentiment Analysis** – [Paper](https://arxiv.org/abs/2104.12250)
+  Multilingual social-media transformer for sentiment tasks.
+
+- **Mukherjee et al. (2021): XtremeDistilTransformers: Task Transfer for Task-agnostic Distillation** – [Paper](https://arxiv.org/abs/2106.04563)
+  Task-agnostic distillation producing compact multilingual encoders.
+
+- **Lasri et al. (2023): EconBERTa: Towards Robust Extraction of Named Entities in Economics** – [Paper](https://aclanthology.org/2023.findings-emnlp.774/)
+  Domain-adapted encoder and the ECON-IE dataset for economics NER.
+
 ---
 
 ### 💻 Practical Components

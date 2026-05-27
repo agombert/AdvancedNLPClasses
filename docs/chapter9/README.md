@@ -80,6 +80,14 @@ We explore the **training processes** (SFT, RM, PPO), how models like **GitHub C
   Paper introducing Hypothetical Document Embeddings (HyDE).
 - **Hu et al. (2021)** - "LoRA: Low-Rank Adaptation of Large Language Models"
   Paper introducing LoRA.
+- **[Wei et al. (2022)](https://arxiv.org/abs/2201.11903)** – “Chain-of-Thought Prompting Elicits Reasoning in Large Language Models”
+  Shows that intermediate reasoning steps unlock multi-step problem solving.
+- **[Shin et al. (2021)](https://aclanthology.org/2021.emnlp-main.608/)** – “Constrained Language Models Yield Few-Shot Semantic Parsers”
+  Uses constrained decoding to turn LLMs into few-shot semantic parsers.
+- **[Tie et al. (2025)](https://arxiv.org/abs/2503.06072)** – “A Survey on Post-training of Large Language Models”
+  Survey charting the evolution of alignment, fine-tuning, and reasoning methods.
+- **[Liu et al. (2023)](https://arxiv.org/abs/2310.02170)** – “A Dynamic LLM-Powered Agent Network for Task-Oriented Agent Collaboration (DyLAN)”
+  Multi-agent collaboration framework with automatic team optimization.
 - **Blog post** - [blog.eleuther.ai/transformer-math/](https://blog.eleuther.ai/transformer-math/)
   Blog post explaining the math behind LLM computation.
 - **Blog post** - [kipp.ly/transformer-inference-arithmetic/](https://kipp.ly/transformer-inference-arithmetic/)
