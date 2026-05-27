@@ -81,6 +81,9 @@ We connect theory to practice with real-world examples and Python code for build
 - **ReAct Framework** – [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/pdf/2210.03629)
   Foundation paper introducing the ReAct agent approach.
 
+- **[Liu et al. (2023)](https://arxiv.org/abs/2312.15685)** – “What Makes Good Data for Alignment? A Comprehensive Study of Automatic Data Selection in Instruction Tuning (DEITA)”
+  Self-instruct-style data selection that matches SOTA alignment with far less SFT data.
+
 ---
 
 ### 💻 Practical Components
