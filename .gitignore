@@ -27,3 +27,11 @@ ENV/
 env.bak/
 venv.bak/
 *.ipynb.bak
+
+# Training artefacts
+checkpoints/
+**/checkpoints/
+emissions.csv
+**/emissions.csv
+tmp_bert*/
+**/tmp_bert*/
