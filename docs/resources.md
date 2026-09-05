@@ -14,6 +14,7 @@
 - [Chip Huyen](https://huyenchip.com/blog/): Practical writing on MLOps, AI engineering, and building real-world ML systems.
 - [Jack Clark: Import AI](https://importai.substack.com/): Weekly roundup of AI research, policy, and geopolitics.
 - [Andrew Ng: The Batch](https://www.deeplearning.ai/the-batch/): Accessible weekly digest of AI news, research, and industry trends.
+- [AI Weekly](https://aiweekly.co/): Discover what AI experts are reading and sharing right now across models, agents, funding, policy, and research.
 - [Emily M. Bender & Alex Hanna: Mystery AI Hype Theater 3000](https://buttondown.com/maiht3k): Sharp, linguistically-grounded take-downs of AI hype and overclaims about LLMs.
 - [Rachel Thomas: fast.ai blog](https://rachel.fast.ai/): Essays on AI ethics, education, inclusion, and debunking conventional ML wisdom.
 
